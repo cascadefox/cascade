@@ -1,6 +1,6 @@
 <div align="center">
 <h1>ag.proton</h1>
-<b>Minimalist, Simple, Keyboard Centered and heavily based on 🦊 [SimplerentFox](https://github.com/migueravila/SimplerentFox)</b>
+<b>Minimalist, Simple, Keyboard Centered and heavily based on SimplerentFox. 🦊</b>
 </div>
 
 ![](preview.jpg)
