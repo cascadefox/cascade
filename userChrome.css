@@ -1,0 +1,258 @@
+/*
+C O N F I G
+*/
+
+
+:root {
+
+    --bar-bg:        #303035;
+    --tab-active-bg: #404045;
+
+}
+
+
+
+
+
+/*
+G E N E R A L
+*/
+
+
+window,
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#PersonalToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar {
+
+    background-color: var(--bar-bg) !important;
+    -moz-appearance: none !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
+
+
+#TabsToolbar { margin-top: -1px !important; margin-bottom: 1px !important; margin-left: 25vw !important; }
+
+
+
+
+
+/*
+T A B S
+*/
+
+:root {
+
+    --tabs-border: transparent !important;
+    --toolbox-border-bottom-color: transparent !important;
+
+}
+
+
+#navigator-toolbox { border: 0px !important; }
+
+
+/* Tab Background */
+.tabbrowser-tab[selected] > .tab-stack > .tab-background { background: var(--tab-active-bg) !important; }
+.tabbrowser-tab:not([selected]) > .tab-stack > .tab-background { background: transparent !important; }
+
+
+/* Adaptive Tab Width */
+.tabbrowser-tab[selected][fadein]:not([pinned]) { min-width: 205px !important; }
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) { min-width: 115px !important; max-width: 145px !important; }
+
+
+/* Show Close Button on active Tab and Mouseover */
+#TabsToolbar .tabbrowser-tab[selected=true]:not([pinned]) .close-icon { display: -moz-box !important; }
+#TabsToolbar .tabbrowser-tab:not([selected="true"]):not([pinned]):hover .close-icon{ display: -moz-box !important; }
+
+
+
+
+
+/*
+B U T T O N S
+*/
+
+
+/* This one is the forward button  */
+#forward-button { display: none !important; }
+
+
+/* This one is the back button  */
+#back-button { display: none !important; }
+
+
+/* This one is the spacer between tabs and border  */
+.titlebar-spacer { display: none !important; }
+
+
+/* This one is the "shield" icon  */
+#tracking-protection-icon-container { display: none !important; }
+
+
+/* This one is the hamburger menu!  */
+#PanelUI-button { display: none !important; }
+
+
+/* This one removes the close button  */
+.tabbrowser-tab:not([pinned]) .tab-close-button { display: none !important; }
+
+
+/* Removing the zoom button  */
+#urlbar-zoom-button { display: none !important; }
+
+
+/* Page action (right three dash button)  */
+#pageActionButton { display: none !important; }
+
+
+
+
+
+/*
+N A V B A R
+*/
+
+
+#navigator-toolbox::after { border: 0px !important; }
+
+
+#nav-bar {
+
+    
+    margin-top: -42px !important; margin-right: 75vw !important; margin-bottom: -1px !important;
+
+    box-shadow: none !important;
+    border: none !important; border-top-width: 0px !important; border-bottom-width: 0px !important;
+
+}
+
+
+
+
+
+/*
+U R L - B A R
+*/
+
+
+#urlbar, #urlbar * { box-shadow: none !important; }
+
+
+#urlbar[breakout] {
+
+    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2 - 1px) !important; left: 0 !important;
+
+    margin-inline-start: 0px !important;
+    width: 100% !important;
+
+}
+
+
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+    #urlbar[breakout][breakout-extend] > #urlbar-background {
+        animation-name: none !important;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
+    }
+}
+
+
+#urlbar[breakout]:not([open]) { bottom: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important; }
+
+
+#urlbar[breakout-extend] {
+
+    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+    left: calc((var(--urlbar-toolbar-width) - var(--urlbar-width)) / 2) !important;
+    
+    width: 100% !important;
+
+}
+
+
+#urlbar[breakout-extend] #urlbar-input-container {
+
+    padding: 0px !important;
+    height: calc(var(--tab-min-height) - 3px) !important;
+
+}
+
+
+#urlbar-input-container {
+
+    padding: 0 !important;
+    height: 100% !important;
+
+}
+
+#identity-box { display: none; }
+
+
+.urlbarView-row { padding: 0px !important; }
+
+
+#searchbar {
+
+    border: none !important;
+    background: var(--bf-bg) !important;
+
+}
+
+
+.searchbar-textbox {
+
+    font-weight: 700 !important;
+    color: var(--bf-focus-fg) !important;
+
+}
+
+
+#urlbar-container { min-width: 150px !important; }
+
+
+#urlbar {
+
+    box-shadow: none !important;
+    border: none !important;
+
+}
+
+
+#page-action-buttons { display: none !important; }
+
+
+.urlbarView {
+
+    margin: 0px !important;
+    width: 100% !important;
+
+}
+
+
+#urlbar-label-box, #urlbar-search-mode-indicator { display: none !important; }
+
+
+#urlbar-background {
+
+    border: transparent !important;
+    background: transparent !important;
+    
+    animation: none !important;
+
+}
+
+
+#urlbar .urlbarView { display: none !important; }
+
+
+.tab-context-line{ bottom: 0; }
