@@ -1,22 +1,44 @@
-/*
-C O N F I G
-*/
+/*  CONFIG
+ *  ======
+ */
 
 
-:root {
+ :root {
 
     --bar-bg:        #303035;
     --tab-active-bg: #404045;
+    
+    --urlbar-width: 30vw;
 
+    
+    /* Replace 'none' with 'inherit' to unhide the following options */
+    --showForwardButton: none;
+    --showBackButton: none;
+    --showTabCloseButton: none;
+    --showPageActionButton: none;   /* THESE ARE DIFFERENT THINGS */
+    --showPageActionButtons: none;  /* FIREFOX FOR SOME REASON NAMED VERY SIMILAR! */
+      /* ^ sometimes is buggy with 'inherit' – remove line 239 if this happens. */
+    
 }
 
 
+/* disables close/minimize/maximize buttons */
+.titlebar-buttonbox { display: none !important; }
+
+/* disables bookmark star button in nav bar */
+#star-button{ display:none !important; }
+
+/* disables reader mode button in nav bar */
+#reader-mode-button{ display:none !important; }
 
 
 
-/*
-G E N E R A L
-*/
+
+
+
+/*  GENERAL
+ *  =======
+ */
 
 
 window,
@@ -28,8 +50,8 @@ window,
 #sidebar-box,
 #nav-bar {
 
-    background-color: var(--bar-bg) !important;
     -moz-appearance: none !important;
+    background-color: var(--bar-bg) !important;
     background-image: none !important;
     border: none !important;
     box-shadow: none !important;
@@ -37,21 +59,19 @@ window,
 }
 
 
-.titlebar-buttonbox { display: none; }
-
-
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
 
 
-#TabsToolbar { margin-top: -1px !important; margin-bottom: 1px !important; margin-left: 25vw !important; }
+#TabsToolbar { margin-top: -1px !important; margin-bottom: 1px !important; margin-left: var(--urlbar-width) !important; }
 
 
 
 
 
-/*
-T A B S
-*/
+/*  TABS
+ *  ====
+ */
+
 
 :root {
 
@@ -71,7 +91,7 @@ T A B S
 
 /* Adaptive Tab Width */
 .tabbrowser-tab[selected][fadein]:not([pinned]) { min-width: 205px !important; }
-.tabbrowser-tab[fadein]:not([selected]):not([pinned]) { min-width: 115px !important; max-width: 145px !important; }
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) { max-width: 145px !important; }
 
 
 /* Show Close Button on active Tab and Mouseover */
@@ -82,49 +102,42 @@ T A B S
 
 
 
-/*
-B U T T O N S
-*/
+/*  BUTTONS
+ *  =======
+ */
 
 
 /* This one is the forward button  */
-#forward-button { display: none !important; }
-
+#forward-button { display: var(--showForwardButton) !important; }
 
 /* This one is the back button  */
-#back-button { display: none !important; }
-
+#back-button { display: var(--showBackButton) !important; }
 
 /* This one is the spacer between tabs and border  */
 .titlebar-spacer { display: none !important; }
 
-
 /* This one is the "shield" icon  */
 #tracking-protection-icon-container { display: none !important; }
-
 
 /* This one is the hamburger menu!  */
 #PanelUI-button { display: none !important; }
 
-
 /* This one removes the close button  */
-.tabbrowser-tab:not([pinned]) .tab-close-button { display: none !important; }
-
+.tabbrowser-tab:not([pinned]) .tab-close-button { display: var(--showTabCloseButton) !important; }
 
 /* Removing the zoom button  */
 #urlbar-zoom-button { display: none !important; }
 
-
 /* Page action (right three dash button)  */
-#pageActionButton { display: none !important; }
+#pageActionButton { display: var(--showPageActionButton) !important; }
 
 
 
 
 
-/*
-N A V B A R
-*/
+/*  NAVBAR
+ *  ======
+ */
 
 
 #navigator-toolbox::after { border: 0px !important; }
@@ -133,7 +146,7 @@ N A V B A R
 #nav-bar {
 
     
-    margin-top: -42px !important; margin-right: 75vw !important; margin-bottom: -1px !important;
+    margin-top: -42px !important; margin-right: calc(100vw - var(--urlbar-width)) !important; margin-bottom: -1px !important;
 
     box-shadow: none !important;
     border: none !important; border-top-width: 0px !important; border-bottom-width: 0px !important;
@@ -144,9 +157,9 @@ N A V B A R
 
 
 
-/*
-U R L - B A R
-*/
+/*  URL-BAR
+ *  =======
+ */
 
 
 #urlbar, #urlbar * { box-shadow: none !important; }
@@ -198,7 +211,8 @@ U R L - B A R
 
 }
 
-#identity-box { display: none; }
+
+#identity-permission-box { display: none !important; }
 
 
 .urlbarView-row { padding: 0px !important; }
@@ -231,7 +245,7 @@ U R L - B A R
 }
 
 
-#page-action-buttons { display: none !important; }
+#page-action-buttons { display: var(--showPageActionButtons) !important; }
 
 
 .urlbarView {
@@ -248,14 +262,11 @@ U R L - B A R
 #urlbar-background {
 
     border: transparent !important;
-    background: transparent !important;
+    background-color: var(--bar-bg) !important;
     
-    animation: none !important;
+    animation: inherit !important;
 
 }
-
-
-#urlbar .urlbarView { display: none !important; }
 
 
 .tab-context-line{ bottom: 0; }
