@@ -9,6 +9,8 @@
 ag.proton is a Firefox Theme based on [SimplerentFox](https://github.com/migueravila/SimplerentFox).
 What you get is a really simple one-line layout that works well with the new Proton UI.
 
+Thanks to [Nick](https://github.com/nicksundermeyer) for all the suggestions to improve this theme! ♡
+
 
 
 ## Usage
