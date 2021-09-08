@@ -1,44 +1,118 @@
-/*  CONFIG
- *  ======
- */
+/*==============================================================================================*
+
+  +-----+-----+-----+-----+-----+-----+-----+
+  | █▀▀ | ▄▀█ | █▀▀ | █▀▀ | ▄▀█ | █▀▄ | █▀▀ |
+  | █▄▄ | █▀█ | ▄▄█ | █▄▄ | █▀█ | █▄▀ | ██▄ |
+  +-----+-----+-----+-----+-----+-----+-----+
+
+
+  Description:    Minimalist, Simple, Keyboard Centered and heavily based on SimpleFox. 🦊
+                  What you get is a really simple one-line layout using the new Proton UI.
+
+                  > SimpleFox: https://github.com/migueravila/SimpleFox
+
+                  #
+  Author:         Andreas Grafen
+                  (https://andreas.grafen.info)
+
+                  
+  Repository:     https://github.com/andreasgrafen/ag.proton
+
+
+                  Thank you Nick for all the great suggestions for improvements! ♡
+                  (https://github.com/nicksundermeyer)
+
+*==============================================================================================*/
+
+
+
+/*---+---+---+---+---+---+
+ | C | O | N | F | I | G |
+ +---+---+---+---+---+---*/
 
 
  :root {
+    
+    /* COLOUR DEFINITIONS */
+    /* Comment this block out if you want to keep the default theme colour. */
+    /* This will also work with custom colours from color.firefox.com. */
+  
+    /* Theme Colour Suggestions
+     *                   Dark       Light    */
+    --window-colour:    #1E2021; /* #FAFAFC; */
+    --secondary-colour: #191B1C; /* #EAEAEC; */
 
-    --bar-bg:        #303035;
-    --tab-active-bg: #404045;
-    
-    --urlbar-width: 30vw;
+    --button-hover-bgcolor:         var(--secondary-colour) !important;
+    --toolbar-bgcolor:              var(--window-colour) !important;
+    --tabs-border-color:            var(--window-colour) !important;
+    --lwt-sidebar-background-color: var(--secondary-colour) !important;
+    --lwt-toolbar-field-focus:      var(--window-colour) !important;
 
-    
-    /* Replace 'none' with 'inherit' to unhide the following options */
-    --showForwardButton: none;
-    --showBackButton: none;
-    --showTabCloseButton: none;
-    --showPageActionButton: none;   /* THESE ARE DIFFERENT THINGS */
-    --showPageActionButtons: none;  /* FIREFOX FOR SOME REASON NAMED VERY SIMILAR! */
-      /* ^ sometimes is buggy with 'inherit' – remove line 239 if this happens. */
-    
 }
 
 
-/* disables close/minimize/maximize buttons */
-.titlebar-buttonbox { display: none !important; }
 
-/* disables bookmark star button in nav bar */
-#star-button{ display:none !important; }
+:root {
 
-/* disables reader mode button in nav bar */
-#reader-mode-button{ display:none !important; }
+    --urlbar-width: clamp(200px, 40vw, 500px);
+
+    /* dynamic tab width settings */
+    --active-tab-width:   clamp(100px, 20vw, 300px);
+    --inactive-tab-width: clamp( 50px, 15vw, 200px);
+
+    /* adds left and right margin to the container-tabs indicator */
+    --container-tabs-indicator-margin: 10px;
+
+    /* if active always shows the tab close button */
+    --show-tab-close-button: none; /* DEFAULT: -moz-inline-box; */ 
+
+    /* if active only shows the tab close button on hover*/
+    --show-tab-close-button-hover: none; /* DEFAULT: -moz-inline-box; */
+
+    --uc-theme-colour: var(--toolbar-bgcolor);
+    --uc-hover-colour: var(--button-hover-bgcolor);
+
+    --toolbarbutton-border-radius: 0 !important;
+    --tab-border-radius:           0 !important;
+    --tab-block-margin:            2px !important;
+
+}
+
+
+
+#back-button,
+#forward-button { display: none !important; }
+
+/* bookmark icon */
+#star-button{ display: none !important; }
+
+/* zoom indicator */
+#urlbar-zoom-button { display: none !important; }
+
+/*  hides context burger menu BUT causes popups to be buggy at times */
+#PanelUI-button { display: none !important; }
+
+#reader-mode-button{ display: none !important; }
+
+/* tracking protection shield icon */
+#tracking-protection-icon-container { display: none !important; }
+
+/* #identity-box { display: none !important } /* hides encryption AND permission items */
+#identity-permission-box { display: none !important; } /* only hodes permission items */
+
+/* e.g. playing indicator */
+.tab-secondary-label { display: none !important; }
+
+#pageActionButton { display: none !important; }
+#page-action-buttons { display: none !important; }
 
 
 
 
 
-
-/*  GENERAL
- *  =======
- */
+/*---+---+---+---+---+---+
+ | L | A | Y | O | U | T |
+ +---+---+---+---+---+---*/
 
 
 window,
@@ -51,222 +125,104 @@ window,
 #nav-bar {
 
     -moz-appearance: none !important;
-    background-color: var(--bar-bg) !important;
-    background-image: none !important;
+    
     border: none !important;
     box-shadow: none !important;
+    background: var(--uc-theme-colour) !important;
 
 }
 
 
-#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
 
 
-#TabsToolbar { margin-top: -1px !important; margin-bottom: 1px !important; margin-left: var(--urlbar-width) !important; }
-
-
-
-
-
-/*  TABS
- *  ====
- */
-
-
-:root {
-
-    --tabs-border: transparent !important;
-    --toolbox-border-bottom-color: transparent !important;
-
-}
-
-
-#navigator-toolbox { border: 0px !important; }
-
-
-/* Tab Background */
-.tabbrowser-tab[selected] > .tab-stack > .tab-background { background: var(--tab-active-bg) !important; }
-.tabbrowser-tab:not([selected]) > .tab-stack > .tab-background { background: transparent !important; }
-
-
-/* Adaptive Tab Width */
-.tabbrowser-tab[selected][fadein]:not([pinned]) { min-width: 205px !important; }
-.tabbrowser-tab[fadein]:not([selected]):not([pinned]) { max-width: 145px !important; }
-
-
-/* Show Close Button on active Tab and Mouseover */
-#TabsToolbar .tabbrowser-tab[selected=true]:not([pinned]) .close-icon { display: -moz-box !important; }
-#TabsToolbar .tabbrowser-tab:not([selected="true"]):not([pinned]):hover .close-icon{ display: -moz-box !important; }
-
-
-
-
-
-/*  BUTTONS
- *  =======
- */
-
-
-/* This one is the forward button  */
-#forward-button { display: var(--showForwardButton) !important; }
-
-/* This one is the back button  */
-#back-button { display: var(--showBackButton) !important; }
-
-/* This one is the spacer between tabs and border  */
+/* remove "padding" left and right from tabs */
 .titlebar-spacer { display: none !important; }
 
-/* This one is the "shield" icon  */
-#tracking-protection-icon-container { display: none !important; }
+/* remove gap after pinned tabs */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
+    > #tabbrowser-arrowscrollbox
+    > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
 
-/* This one is the hamburger menu!  */
-#PanelUI-button { display: none !important; }
+.tabbrowser-tab
+    >.tab-stack
+    > .tab-background { box-shadow: none !important;  }
 
-/* This one removes the close button  */
-.tabbrowser-tab:not([pinned]) .tab-close-button { display: var(--showTabCloseButton) !important; }
+.tabbrowser-tab
+    > .tab-stack
+    > .tab-background { background: var(--uc-theme-colour) !important; }
 
-/* Removing the zoom button  */
-#urlbar-zoom-button { display: none !important; }
+.tabbrowser-tab[selected]
+    > .tab-stack
+    > .tab-background { background: var(--uc-hover-colour) !important; }
 
-/* Page action (right three dash button)  */
-#pageActionButton { display: var(--showPageActionButton) !important; }
+/* tab close button options */
+.tabbrowser-tab:not([pinned]) .tab-close-button { display: var(--show-tab-close-button) !important; }
+.tabbrowser-tab:not([pinned]):hover .tab-close-button { display: var(--show-tab-close-button-hover) !important }
+
+/* remove window control buttons */
+.titlebar-buttonbox-container { display: none !important; }
+
+/* adaptive tab width */
+.tabbrowser-tab[selected][fadein]:not([pinned]) { max-width: var(--active-tab-width) !important; }
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) { max-width: var(--inactive-tab-width) !important; }
+
+
+/* container tabs indicator */
+.tabbrowser-tab[usercontextid]
+    > .tab-stack
+    > .tab-background
+    > .tab-context-line {
+    
+        margin: -1px var(--container-tabs-indicator-margin) 0 var(--container-tabs-indicator-margin) !important;
+
+        border-radius: var(--tab-border-radius) !important;
+
+}
 
 
 
-
-
-/*  NAVBAR
- *  ======
- */
-
-
-#navigator-toolbox::after { border: 0px !important; }
 
 
 #nav-bar {
 
-    
-    margin-top: -42px !important; margin-right: calc(100vw - var(--urlbar-width)) !important; margin-bottom: -1px !important;
-
+    border:     none !important;
     box-shadow: none !important;
-    border: none !important; border-top-width: 0px !important; border-bottom-width: 0px !important;
+    background: transparent !important;
 
 }
 
+/* remove border below whole nav */
+#navigator-toolbox { border-bottom: none !important; }
 
+#urlbar,
+#urlbar * { box-shadow: none !important; }
 
+#urlbar-background { border: var(--uc-hover-colour) !important; }
 
+#urlbar[focused="true"]
+    > #urlbar-background,
+#urlbar:not([open])
+    > #urlbar-background { background: transparent !important; }
 
-/*  URL-BAR
- *  =======
- */
+#urlbar[open]
+    > #urlbar-background { background: var(--uc-theme-colour) !important; }
 
-
-#urlbar, #urlbar * { box-shadow: none !important; }
-
-
-#urlbar[breakout] {
-
-    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2 - 1px) !important; left: 0 !important;
-
-    margin-inline-start: 0px !important;
-    width: 100% !important;
-
-}
-
-
-@-moz-document url(chrome://browser/content/browser.xhtml) {
-    #urlbar[breakout][breakout-extend] > #urlbar-background {
-        animation-name: none !important;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
-    }
-}
-
-
-#urlbar[breakout]:not([open]) { bottom: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important; }
-
-
-#urlbar[breakout-extend] {
-
-    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-    left: calc((var(--urlbar-toolbar-width) - var(--urlbar-width)) / 2) !important;
+.urlbarView-row:hover
+    > .urlbarView-row-inner,
+.urlbarView-row[selected]
+    > .urlbarView-row-inner { background: var(--uc-hover-colour) !important; }
     
-    width: 100% !important;
-
-}
 
 
-#urlbar[breakout-extend] #urlbar-input-container {
-
-    padding: 0px !important;
-    height: calc(var(--tab-min-height) - 3px) !important;
-
-}
 
 
-#urlbar-input-container {
-
-    padding: 0 !important;
-    height: 100% !important;
-
-}
-
-
-#identity-permission-box { display: none !important; }
-
-
-.urlbarView-row { padding: 0px !important; }
-
-
-#searchbar {
-
-    border: none !important;
-    background: var(--bf-bg) !important;
-
-}
-
-
-.searchbar-textbox {
-
-    font-weight: 700 !important;
-    color: var(--bf-focus-fg) !important;
-
-}
-
-
-#urlbar-container { min-width: 150px !important; }
-
-
-#urlbar {
-
-    box-shadow: none !important;
-    border: none !important;
-
-}
-
-
-#page-action-buttons { display: var(--showPageActionButtons) !important; }
-
-
-.urlbarView {
-
-    margin: 0px !important;
-    width: 100% !important;
-
-}
-
-
-#urlbar-label-box, #urlbar-search-mode-indicator { display: none !important; }
-
-
-#urlbar-background {
-
-    border: transparent !important;
-    background-color: var(--bar-bg) !important;
+/* transition to oneline */
+@media (min-width: 1000px) { 
     
-    animation: inherit !important;
+    /* move tabs bar over */
+    #TabsToolbar { margin-left: var(--urlbar-width) !important; }
+
+    /* move entire nav bar  */
+    #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--urlbar-width)) 0 0 !important; }
 
 }
-
-
-.tab-context-line{ bottom: 0; }
