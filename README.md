@@ -63,7 +63,7 @@ Edit the `min-width` value to change the breakpoint size on which Cascade will s
 You can use your own colours for Cascade. To do so just edit the following block on top of the config section.
 By default it will use a dark theme but colour suggestions for light theme users are given as well. Please also change Firefox' theme in your settings to make sure you get the best compatibility.
 
-If you're using a custom colour scheme like (Firefox Color)[colors.firefox.com] you can comment out the entire block to use the default colours provided by the Theme Addon.
+If you're using a custom colour scheme (e.g. [Firefox Color](https://color.firefox.com)) you can comment out the entire block to use the default colours provided by the Theme Addon.
 
 ```css
  :root {
