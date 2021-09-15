@@ -43,6 +43,16 @@
     --secondary-colour: #191B1C; /* #EAEAEC; */
     --inverted-colour:  #FAFAFC; /* #1E2021; */
 
+    /* Containter Tab Colours */
+    --identity-color-blue:      #7ED6DF;
+    --identity-color-turquoise: #55E6C1;
+    --identity-color-green:     #B8E994;
+    --identity-color-yellow:    #F7D794;
+    --identity-color-orange:    #F19066;
+    --identity-color-red:       #FF0000;
+    --identity-color-pink:      #F78FB3;
+    --identity-color-purple:    #786FA6;
+
     --button-hover-bgcolor:         var(--secondary-colour) !important;
     --toolbar-bgcolor:              var(--window-colour) !important;
     --tabs-border-color:            var(--window-colour) !important;
@@ -313,5 +323,78 @@ window,
 
     /* move entire nav bar  */
     #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--urlbar-width)) 0 0 !important; }
+
+}
+
+
+
+
+
+/*---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+ | C | O | N | T | A | I | N | E | R |   | T | A | B | S |
+ +---+---+---+---+---+---+---+---+---+---+---+---+---+---*/
+
+ 
+
+.identity-color-blue {
+
+    --identity-tab-color: var(--identity-color-blue) !important;
+    --identity-icon-color: var(--identity-color-blue) !important;
+
+}
+
+
+.identity-color-turquoise {
+
+    --identity-tab-color: var(--identity-color-turquoise) !important;
+    --identity-icon-color: var(--identity-color-turquoise) !important;
+
+}
+
+
+.identity-color-green {
+
+    --identity-tab-color: var(--identity-color-green) !important;
+    --identity-icon-color: var(--identity-color-green) !important;
+
+}
+
+
+.identity-color-yellow {
+
+    --identity-tab-color: var(--identity-color-yellow) !important;
+    --identity-icon-color: var(--identity-color-yellow) !important;
+
+}
+
+
+.identity-color-orange {
+
+    --identity-tab-color: var(--identity-color-orange) !important;
+    --identity-icon-color: var(--identity-color-orange) !important;
+
+}
+
+
+.identity-color-red {
+
+    --identity-tab-color: var(--identity-color-red) !important;
+    --identity-icon-color: var(--identity-color-red) !important;
+
+}
+
+
+.identity-color-pink {
+
+    --identity-tab-color: var(--identity-color-pink) !important;
+    --identity-icon-color: var(--identity-color-pink) !important;
+
+}
+
+
+.identity-color-purple {
+
+    --identity-tab-color: var(--identity-color-purple) !important;
+    --identity-icon-color: var(--identity-color-purple) !important;
 
 }
