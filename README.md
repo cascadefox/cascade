@@ -34,7 +34,7 @@ Thank you [Nick](https://github.com/nicksundermeyer) for all the great suggestio
     - Windows: `C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release`
 4. If it doesn't exist already create a folder called `chrome`.
 5. Copy your desired `userChrome.css` into that folder.
-6. *optional* Customise everything to your liking.e
+6. *optional* Customise everything to your liking.
 
 ‎
 ‎
@@ -63,7 +63,7 @@ Edit the `min-width` value to change the breakpoint size on which Cascade will s
 You can use your own colours for Cascade. To do so just edit the following block on top of the config section.
 By default it will use a dark theme but colour suggestions for light theme users are given as well. Please also change Firefox' theme in your settings to make sure you get the best compatibility.
 
-If you're using a custom colour scheme (e.g. (Firefox Color)[colors.firefox.com]) you can comment out the entire block to use the default colours provided by the Theme Addon.
+If you're using a custom colour scheme (e.g. [Firefox Color](https://color.firefox.com)) you can comment out the entire block to use the default colours provided by the Theme Addon.
 
 ```css
  :root {
@@ -88,7 +88,7 @@ These are **some** of the shortcuts that are available:
 
 Windows / Linux | MacOS | Description
 --- | --- | ---
-`Ctrl + L` | `Command * L` | focuses the URL bar
+`Ctrl + L` | `Command * L` | focuses the URL bar
 `Ctrl + B` | `Command + B` | shows you the bookmark sidebar
 `Ctrl + Shift + B` | `Command + Shift + B` | shows you the bookmark toolbar
 `Alt + Left Arrow` | `Command + Left Arrow` | navigates backwards in your history
