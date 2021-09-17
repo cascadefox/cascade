@@ -41,6 +41,17 @@
      *                   Dark       Light    */
     --window-colour:    #1E2021; /* #FAFAFC; */
     --secondary-colour: #191B1C; /* #EAEAEC; */
+    --inverted-colour:  #FAFAFC; /* #1E2021; */
+
+    /* Containter Tab Colours */
+    --identity-color-blue:      #7ED6DF;
+    --identity-color-turquoise: #55E6C1;
+    --identity-color-green:     #B8E994;
+    --identity-color-yellow:    #F7D794;
+    --identity-color-orange:    #F19066;
+    --identity-color-red:       #FC5C65;
+    --identity-color-pink:      #F78FB3;
+    --identity-color-purple:    #786FA6;
 
     --button-hover-bgcolor:         var(--secondary-colour) !important;
     --toolbar-bgcolor:              var(--window-colour) !important;
@@ -69,8 +80,9 @@
     /* if active only shows the tab close button on hover*/
     --show-tab-close-button-hover: none; /* DEFAULT: -moz-inline-box; */
 
-    --uc-theme-colour: var(--toolbar-bgcolor);
-    --uc-hover-colour: var(--button-hover-bgcolor);
+    --uc-theme-colour:    var(--toolbar-bgcolor);
+    --uc-hover-colour:    var(--button-hover-bgcolor);
+    --uc-inverted-colour: var(--inverted-colour);
 
     --toolbarbutton-border-radius: 0 !important;
     --tab-border-radius:           0 !important;
@@ -135,6 +147,7 @@ window,
 
 
 
+
 /* remove "padding" left and right from tabs */
 .titlebar-spacer { display: none !important; }
 
@@ -181,6 +194,92 @@ window,
 
 
 
+/* show favicon when media is playing but tab is hovered */
+.tab-icon-image:not([pinned]) { opacity: 1 !important; }
+
+/* Makes the speaker icon to always appear if the tab is playing (not only on hover) */
+.tab-icon-overlay:not([crashed]),
+.tab-icon-overlay[pinned][crashed][selected] {
+
+  top: 5px !important;
+  z-index: 1 !important;
+
+  padding: 1.5px !important;
+  inset-inline-end: -8px !important;
+  width: 16px !important; height: 16px !important;
+
+  border-radius: 10px !important;
+
+}
+
+/* style and position speaker icon */
+.tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
+
+  stroke: transparent !important;
+  background: transparent !important;
+  opacity: 1 !important; fill-opacity: 0.8 !important;
+
+  color: currentColor !important;
+    
+  stroke: var(--uc-theme-colour) !important;
+  background-color: var(--uc-theme-colour) !important;
+
+}
+
+/* change the colours of the speaker icon on active tab to match tab colours */
+.tabbrowser-tab[selected] .tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
+        
+  stroke: var(--uc-hover-colour) !important;
+  background-color: var(--uc-hover-colour) !important;
+
+}
+
+.tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) { margin-inline-end: 9.5px !important; }
+
+.tabbrowser-tab:not([image]) .tab-icon-overlay:not([pinned], [sharing], [crashed]) {
+
+  top: 0 !important;
+
+  padding: 0 !important;
+  margin-inline-end: 5.5px !important; 
+  inset-inline-end: 0 !important;
+
+}
+
+.tab-icon-overlay:not([crashed])[soundplaying]:hover,
+.tab-icon-overlay:not([crashed])[muted]:hover,
+.tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
+    
+    color: currentColor !important;
+    stroke: var(--uc-inverted-colour) !important;
+    background-color: var(--uc-inverted-colour) !important;
+    fill-opacity: 0.95 !important;
+    
+}
+
+.tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[soundplaying]:hover,
+.tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[muted]:hover,
+.tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
+    
+    color: currentColor !important;
+    stroke: var(--uc-inverted-colour) !important;
+    background-color: var(--uc-inverted-colour) !important;
+    fill-opacity: 0.95 !important;
+    
+}
+
+/* speaker icon colour fix */
+#TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying],
+#TabsToolbar .tab-icon-overlay:not([crashed])[muted],
+#TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked] { color: var(--uc-inverted-colour) !important; }
+
+/* speaker icon colour fix on hover */
+#TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying]:hover,
+#TabsToolbar .tab-icon-overlay:not([crashed])[muted]:hover,
+#TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover { color: var(--uc-theme-colour) !important; }
+
+
+
 
 
 #nav-bar {
@@ -224,5 +323,78 @@ window,
 
     /* move entire nav bar  */
     #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--urlbar-width)) 0 0 !important; }
+
+}
+
+
+
+
+
+/*---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+ | C | O | N | T | A | I | N | E | R |   | T | A | B | S |
+ +---+---+---+---+---+---+---+---+---+---+---+---+---+---*/
+
+ 
+
+.identity-color-blue {
+
+    --identity-tab-color: var(--identity-color-blue) !important;
+    --identity-icon-color: var(--identity-color-blue) !important;
+
+}
+
+
+.identity-color-turquoise {
+
+    --identity-tab-color: var(--identity-color-turquoise) !important;
+    --identity-icon-color: var(--identity-color-turquoise) !important;
+
+}
+
+
+.identity-color-green {
+
+    --identity-tab-color: var(--identity-color-green) !important;
+    --identity-icon-color: var(--identity-color-green) !important;
+
+}
+
+
+.identity-color-yellow {
+
+    --identity-tab-color: var(--identity-color-yellow) !important;
+    --identity-icon-color: var(--identity-color-yellow) !important;
+
+}
+
+
+.identity-color-orange {
+
+    --identity-tab-color: var(--identity-color-orange) !important;
+    --identity-icon-color: var(--identity-color-orange) !important;
+
+}
+
+
+.identity-color-red {
+
+    --identity-tab-color: var(--identity-color-red) !important;
+    --identity-icon-color: var(--identity-color-red) !important;
+
+}
+
+
+.identity-color-pink {
+
+    --identity-tab-color: var(--identity-color-pink) !important;
+    --identity-icon-color: var(--identity-color-pink) !important;
+
+}
+
+
+.identity-color-purple {
+
+    --identity-tab-color: var(--identity-color-purple) !important;
+    --identity-icon-color: var(--identity-color-purple) !important;
 
 }
