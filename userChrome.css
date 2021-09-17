@@ -11,7 +11,7 @@
 
                   > SimpleFox: https://github.com/migueravila/SimpleFox
 
-                  #
+                  
   Author:         Andreas Grafen
                   (https://andreas.grafen.info)
 
@@ -26,123 +26,162 @@
 
 
 
+
+
 /*---+---+---+---+---+---+
  | C | O | N | F | I | G |
  +---+---+---+---+---+---*/
 
+/* Feel free to tweak the following
+ * config settingsto your own liking. */
+
 
  :root {
     
-    /* COLOUR DEFINITIONS */
+    /*---+---+---+---+---+---+---+
+     | C | O | L | O | U | R | S |
+     +---+---+---+---+---+---+---*/
+     
+     
     /* Comment this block out if you want to keep the default theme colour. */
     /* This will also work with custom colours from color.firefox.com. */
   
     /* Theme Colour Suggestions
-     *                   Dark       Light    */
-    --window-colour:    #1E2021; /* #FAFAFC; */
-    --secondary-colour: #191B1C; /* #EAEAEC; */
-    --inverted-colour:  #FAFAFC; /* #1E2021; */
+     *                              Dark        Light   */
+    --window-colour:               #1E2021; /* #FAFAFC; */
+    --secondary-colour:            #191B1C; /* #EAEAEC; */
+    --inverted-colour:             #FAFAFC; /* #1E2021; */
 
+     
     /* Containter Tab Colours */
-    --identity-color-blue:      #7ED6DF;
-    --identity-color-turquoise: #55E6C1;
-    --identity-color-green:     #B8E994;
-    --identity-color-yellow:    #F7D794;
-    --identity-color-orange:    #F19066;
-    --identity-color-red:       #FC5C65;
-    --identity-color-pink:      #F78FB3;
-    --identity-color-purple:    #786FA6;
-
-    --button-hover-bgcolor:         var(--secondary-colour) !important;
-    --button-active-bgcolor:        var(--secondary-colour) !important;
-    --toolbar-bgcolor:              var(--window-colour) !important;
-    --toolbar-field-color:          var(--inverted-colour) !important;
-    --toolbar-field-focus-color:    var(--inverted-colour) !important;
-    --toolbar-field-focus-background-color: var(--secondary-colour) !important;
-    --toolbarbutton-icon-fill:      var(--inverted-colour) !important;
-    --tabs-border-color:            var(--window-colour) !important;
-    --lwt-sidebar-background-color: var(--secondary-colour) !important;
-    --lwt-sidebar-text-color:       var(--inverted-colour) !important;
-    --lwt-toolbar-field-focus:      var(--window-colour) !important;
-    --lwt-text-color:               var(--inverted-colour) !important;
-    --lwt-tab-text:                 var(--inverted-colour) !important;
-    --autocomplete-popup-highlight-color: var(--inverted-colour) !important;
-    --autocomplete-popup-highlight-background: var(--secondary-colour) !important;
-    --autocomplete-popup-hover-background: var(--secondary-colour) !important;
-    --arrowpanel-background:        var(--window-colour) !important;
-    --arrowpanel-border-color:      var(--secondary-colour) !important;
-    --arrowpanel-color:             var(--inverted-colour) !important;
-
-    /* Extra theme variables*/
-    /* --toolbarbutton-icon-fill-attention: red !important; */
+    --uc-identity-color-blue:      #7ED6DF;
+    --uc-identity-color-turquoise: #55E6C1;
+    --uc-identity-color-green:     #B8E994;
+    --uc-identity-color-yellow:    #F7D794;
+    --uc-identity-color-orange:    #F19066;
+    --uc-identity-color-red:       #FC5C65;
+    --uc-identity-color-pink:      #F78FB3;
+    --uc-identity-color-purple:    #786FA6;
+     
+    
+    /* URL colour in URL bar suggestions */
     --urlbar-popup-url-color: var(--uc-identity-color-purple) !important;
-
-}
-
-
-
-:root {
-
-    --urlbar-width: clamp(200px, 40vw, 500px);
+     
+     
+     
+    /*---+---+---+---+---+---+---+
+     | V | I | S | U | A | L | S |
+     +---+---+---+---+---+---+---*/
+    
+    /* global border radius */
+    --uc-border-radius: 0;
+     
+    /* dynamic url bar width settings */
+    --uc-urlbar-width: clamp(200px, 40vw, 500px);
 
     /* dynamic tab width settings */
-    --active-tab-width:   clamp(100px, 20vw, 300px);
-    --inactive-tab-width: clamp( 50px, 15vw, 200px);
-
-    /* adds left and right margin to the container-tabs indicator */
-    --container-tabs-indicator-margin: 10px;
+    --uc-active-tab-width:   clamp(100px, 20vw, 300px);
+    --uc-inactive-tab-width: clamp( 50px, 15vw, 200px);
 
     /* if active always shows the tab close button */
     --show-tab-close-button: none; /* DEFAULT: -moz-inline-box; */ 
 
     /* if active only shows the tab close button on hover*/
     --show-tab-close-button-hover: none; /* DEFAULT: -moz-inline-box; */
-
-    --uc-theme-colour:    var(--toolbar-bgcolor);
-    --uc-hover-colour:    var(--button-hover-bgcolor);
-    --uc-inverted-colour: var(--inverted-colour);
-
-    --toolbarbutton-border-radius: 0 !important;
-    --tab-border-radius:           0 !important;
-    --tab-block-margin:            2px !important;
+     
+    /* adds left and right margin to the container-tabs indicator */
+    --container-tabs-indicator-margin: 10px;
 
 }
 
+    /*---+---+---+---+---+---+---+
+     | B | U | T | T | O | N | S |
+     +---+---+---+---+---+---+---*/
+
+     #back-button,
+     #forward-button { display: none !important; }
+
+     /* bookmark icon */
+     #star-button{ display: none !important; }
+
+     /* zoom indicator */
+     #urlbar-zoom-button { display: none !important; }
+
+     /*  hides context burger menu BUT causes popups to be buggy at times */
+     #PanelUI-button { display: none !important; }
+
+     #reader-mode-button{ display: none !important; }
+
+     /* tracking protection shield icon */
+     #tracking-protection-icon-container { display: none !important; }
+
+     /* #identity-box { display: none !important } /* hides encryption AND permission items */
+     #identity-permission-box { display: none !important; } /* only hodes permission items */
+
+     /* e.g. playing indicator (secondary - not icon) */
+     .tab-secondary-label { display: none !important; }
+
+     #pageActionButton { display: none !important; }
+     #page-action-buttons { display: none !important; }
 
 
-#back-button,
-#forward-button { display: none !important; }
-
-/* bookmark icon */
-#star-button{ display: none !important; }
-
-/* zoom indicator */
-#urlbar-zoom-button { display: none !important; }
-
-/*  hides context burger menu BUT causes popups to be buggy at times */
-#PanelUI-button { display: none !important; }
-
-#reader-mode-button{ display: none !important; }
-
-/* tracking protection shield icon */
-#tracking-protection-icon-container { display: none !important; }
-
-/* #identity-box { display: none !important } /* hides encryption AND permission items */
-#identity-permission-box { display: none !important; } /* only hodes permission items */
-
-/* e.g. playing indicator */
-.tab-secondary-label { display: none !important; }
-
-#pageActionButton { display: none !important; }
-#page-action-buttons { display: none !important; }
 
 
 
+/*=============================================================================================*/
 
 
 /*---+---+---+---+---+---+
  | L | A | Y | O | U | T |
  +---+---+---+---+---+---*/
+
+/* No need to change anything below this comment.
+ * Just tweak it if you want to tweak the overall layout. c: */
+
+:root {
+    
+    --uc-theme-colour:                          var(--window-colour);
+    --uc-hover-colour:                          var(--secondary-colour);
+    --uc-inverted-colour:                       var(--inverted-colour);
+    
+    --button-bgcolor:                           var(--uc-theme-colour)    !important;
+    --button-hover-bgcolor:                     var(--uc-hover-colour)    !important;
+    --button-active-bgcolor:                    var(--uc-hover-colour)    !important;
+    
+    --toolbar-bgcolor:                          var(--uc-theme-colour)    !important;
+    --toolbarbutton-hover-background:           var(--uc-hover-colour)    !important;
+    --toolbarbutton-active-background:          var(--uc-hover-colour)    !important;
+    --toolbarbutton-border-radius:              var(--uc-border-radius)   !important;
+    --lwt-toolbar-field-focus:                  var(--uc-theme-colour)    !important;
+    --toolbarbutton-icon-fill:                  var(--uc-inverted-colour) !important;
+    --toolbar-field-focus-background-color:     var(--secondary-colour)   !important;
+    --toolbar-field-color:                      var(--uc-inverted-colour) !important;
+    --toolbar-field-focus-color:                var(--uc-inverted-colour) !important;
+    
+    --tabs-border-color:                        var(--uc-theme-colour)    !important;
+    --tab-border-radius:                        var(--uc-border-radius)   !important;
+    --lwt-text-color:                           var(--uc-inverted-colour) !important;
+    --lwt-tab-text:                             var(--uc-inverted-colour) !important;
+
+    --lwt-sidebar-background-color:             var(--uc-hover-colour)    !important;
+    --lwt-sidebar-text-color:                   var(--uc-inverted-colour) !important;
+  
+    --arrowpanel-border-color:                  var(--uc-theme-colour)    !important;
+    --arrowpanel-border-radius:                 var(--uc-border-radius)   !important;
+    --arrowpanel-background:                    var(--uc-theme-colour)    !important;
+    --arrowpanel-color:                         var(--inverted-colour)    !important;
+
+    --autocomplete-popup-highlight-background:  var(--uc-inverted-colour) !important;
+    --autocomplete-popup-highlight-color:       var(--uc-inverted-colour) !important;
+    --autocomplete-popup-hover-background:      var(--uc-inverted-colour) !important;
+    
+
+    --tab-block-margin: 2px !important;
+    
+}
+
+
+
 
 
 window,
@@ -168,43 +207,53 @@ window,
 
 /* grey out ccons inside the toolbar to make it
  * more aligned with the Black & White colour look */
- #PersonalToolbar toolbarbutton:not(:hover),
- #bookmarks-toolbar-button:not(:hover) { filter: grayscale(1) !important; }
+#PersonalToolbar toolbarbutton:not(:hover),
+#bookmarks-toolbar-button:not(:hover) { filter: grayscale(1) !important; }
 
 
-
+/* remove window control buttons */
+.titlebar-buttonbox-container { display: none !important; }
 
 
 /* remove "padding" left and right from tabs */
 .titlebar-spacer { display: none !important; }
+
+
+
+
 
 /* remove gap after pinned tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
     > #tabbrowser-arrowscrollbox
     > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
 
+
+/* remove tab shadow */
 .tabbrowser-tab
     >.tab-stack
     > .tab-background { box-shadow: none !important;  }
 
+
+/* tab background */
 .tabbrowser-tab
     > .tab-stack
     > .tab-background { background: var(--uc-theme-colour) !important; }
 
+
+/* active tab background */
 .tabbrowser-tab[selected]
     > .tab-stack
     > .tab-background { background: var(--uc-hover-colour) !important; }
+
 
 /* tab close button options */
 .tabbrowser-tab:not([pinned]) .tab-close-button { display: var(--show-tab-close-button) !important; }
 .tabbrowser-tab:not([pinned]):hover .tab-close-button { display: var(--show-tab-close-button-hover) !important }
 
-/* remove window control buttons */
-.titlebar-buttonbox-container { display: none !important; }
 
 /* adaptive tab width */
-.tabbrowser-tab[selected][fadein]:not([pinned]) { max-width: var(--active-tab-width) !important; }
-.tabbrowser-tab[fadein]:not([selected]):not([pinned]) { max-width: var(--inactive-tab-width) !important; }
+.tabbrowser-tab[selected][fadein]:not([pinned]) { max-width: var(--uc-active-tab-width) !important; }
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) { max-width: var(--uc-inactive-tab-width) !important; }
 
 
 /* container tabs indicator */
@@ -220,9 +269,9 @@ window,
 }
 
 
-
 /* show favicon when media is playing but tab is hovered */
 .tab-icon-image:not([pinned]) { opacity: 1 !important; }
+
 
 /* Makes the speaker icon to always appear if the tab is playing (not only on hover) */
 .tab-icon-overlay:not([crashed]),
@@ -239,6 +288,7 @@ window,
 
 }
 
+
 /* style and position speaker icon */
 .tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
 
@@ -253,6 +303,7 @@ window,
 
 }
 
+
 /* change the colours of the speaker icon on active tab to match tab colours */
 .tabbrowser-tab[selected] .tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
         
@@ -261,7 +312,9 @@ window,
 
 }
 
+
 .tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) { margin-inline-end: 9.5px !important; }
+
 
 .tabbrowser-tab:not([image]) .tab-icon-overlay:not([pinned], [sharing], [crashed]) {
 
@@ -272,6 +325,7 @@ window,
   inset-inline-end: 0 !important;
 
 }
+
 
 .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 .tab-icon-overlay:not([crashed])[muted]:hover,
@@ -284,6 +338,7 @@ window,
     
 }
 
+
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[muted]:hover,
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
@@ -295,10 +350,12 @@ window,
     
 }
 
+
 /* speaker icon colour fix */
 #TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying],
 #TabsToolbar .tab-icon-overlay:not([crashed])[muted],
 #TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked] { color: var(--uc-inverted-colour) !important; }
+
 
 /* speaker icon colour fix on hover */
 #TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying]:hover,
@@ -317,21 +374,27 @@ window,
 
 }
 
+
 /* remove border below whole nav */
 #navigator-toolbox { border-bottom: none !important; }
+
 
 #urlbar,
 #urlbar * { box-shadow: none !important; }
 
+
 #urlbar-background { border: var(--uc-hover-colour) !important; }
+
 
 #urlbar[focused="true"]
     > #urlbar-background,
 #urlbar:not([open])
     > #urlbar-background { background: transparent !important; }
 
+
 #urlbar[open]
     > #urlbar-background { background: var(--uc-theme-colour) !important; }
+
 
 .urlbarView-row:hover
     > .urlbarView-row-inner,
@@ -345,83 +408,27 @@ window,
 /* transition to oneline */
 @media (min-width: 1000px) { 
     
+
     /* move tabs bar over */
-    #TabsToolbar { margin-left: var(--urlbar-width) !important; }
+    #TabsToolbar { margin-left: var(--uc-urlbar-width) !important; }
+
 
     /* move entire nav bar  */
-    #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--urlbar-width)) 0 0 !important; }
-
-}
+    #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 0 !important; }
 
 
+} /* end media query */
 
 
 
-/*---+---+---+---+---+---+---+---+---+---+---+---+---+---+
- | C | O | N | T | A | I | N | E | R |   | T | A | B | S |
- +---+---+---+---+---+---+---+---+---+---+---+---+---+---*/
-
- 
-
-.identity-color-blue {
-
-    --identity-tab-color: var(--identity-color-blue) !important;
-    --identity-icon-color: var(--identity-color-blue) !important;
-
-}
 
 
-.identity-color-turquoise {
-
-    --identity-tab-color: var(--identity-color-turquoise) !important;
-    --identity-icon-color: var(--identity-color-turquoise) !important;
-
-}
-
-
-.identity-color-green {
-
-    --identity-tab-color: var(--identity-color-green) !important;
-    --identity-icon-color: var(--identity-color-green) !important;
-
-}
-
-
-.identity-color-yellow {
-
-    --identity-tab-color: var(--identity-color-yellow) !important;
-    --identity-icon-color: var(--identity-color-yellow) !important;
-
-}
-
-
-.identity-color-orange {
-
-    --identity-tab-color: var(--identity-color-orange) !important;
-    --identity-icon-color: var(--identity-color-orange) !important;
-
-}
-
-
-.identity-color-red {
-
-    --identity-tab-color: var(--identity-color-red) !important;
-    --identity-icon-color: var(--identity-color-red) !important;
-
-}
-
-
-.identity-color-pink {
-
-    --identity-tab-color: var(--identity-color-pink) !important;
-    --identity-icon-color: var(--identity-color-pink) !important;
-
-}
-
-
-.identity-color-purple {
-
-    --identity-tab-color: var(--identity-color-purple) !important;
-    --identity-icon-color: var(--identity-color-purple) !important;
-
-}
+/* Container Tabs */
+.identity-color-blue      { --identity-tab-color: var(--uc-identity-color-blue)      !important; --identity-icon-color: var(--uc-identity-color-blue)      !important; }
+.identity-color-turquoise { --identity-tab-color: var(--uc-identity-color-turquoise) !important; --identity-icon-color: var(--uc-identity-color-turquoise) !important; }
+.identity-color-green     { --identity-tab-color: var(--uc-identity-color-green)     !important; --identity-icon-color: var(--uc-identity-color-green)     !important; }
+.identity-color-yellow    { --identity-tab-color: var(--uc-identity-color-yellow)    !important; --identity-icon-color: var(--uc-identity-color-yellow)    !important; }
+.identity-color-orange    { --identity-tab-color: var(--uc-identity-color-orange)    !important; --identity-icon-color: var(--uc-identity-color-orange)    !important; }
+.identity-color-red       { --identity-tab-color: var(--uc-identity-color-red)       !important; --identity-icon-color: var(--uc-identity-color-red)       !important; }
+.identity-color-pink      { --identity-tab-color: var(--uc-identity-color-pink)      !important; --identity-icon-color: var(--uc-identity-color-pink)      !important; }
+.identity-color-purple    { --identity-tab-color: var(--uc-identity-color-purple)    !important; --identity-icon-color: var(--uc-identity-color-purple)    !important; }
