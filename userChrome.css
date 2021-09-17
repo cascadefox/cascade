@@ -75,7 +75,7 @@
 
     /* Extra theme variables*/
     /* --toolbarbutton-icon-fill-attention: red !important; */
-    /* --urlbar-popup-url-color:       blue !important; */
+    --urlbar-popup-url-color: var(--uc-identity-color-purple) !important;
 
 }
 
