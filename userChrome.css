@@ -54,10 +54,28 @@
     --identity-color-purple:    #786FA6;
 
     --button-hover-bgcolor:         var(--secondary-colour) !important;
+    --button-active-bgcolor:        var(--secondary-colour) !important;
     --toolbar-bgcolor:              var(--window-colour) !important;
+    --toolbar-field-color:          var(--inverted-colour) !important;
+    --toolbar-field-focus-color:    var(--inverted-colour) !important;
+    --toolbar-field-focus-background-color: var(--secondary-colour) !important;
+    --toolbarbutton-icon-fill:      var(--inverted-colour) !important;
     --tabs-border-color:            var(--window-colour) !important;
     --lwt-sidebar-background-color: var(--secondary-colour) !important;
+    --lwt-sidebar-text-color:       var(--inverted-colour) !important;
     --lwt-toolbar-field-focus:      var(--window-colour) !important;
+    --lwt-text-color:               var(--inverted-colour) !important;
+    --lwt-tab-text:                 var(--inverted-colour) !important;
+    --autocomplete-popup-highlight-color: var(--inverted-colour) !important;
+    --autocomplete-popup-highlight-background: var(--secondary-colour) !important;
+    --autocomplete-popup-hover-background: var(--secondary-colour) !important;
+    --arrowpanel-background:        var(--window-colour) !important;
+    --arrowpanel-border-color:      var(--secondary-colour) !important;
+    --arrowpanel-color:             var(--inverted-colour) !important;
+
+    /* Extra theme variables*/
+    /* --toolbarbutton-icon-fill-attention: red !important; */
+    /* --urlbar-popup-url-color:       blue !important; */
 
 }
 
