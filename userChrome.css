@@ -166,6 +166,15 @@ window,
 
 
 
+/* grey out ccons inside the toolbar to make it
+ * more aligned with the Black & White colour look */
+ #PersonalToolbar toolbarbutton:not(:hover),
+ #bookmarks-toolbar-button:not(:hover) { filter: grayscale(1) !important; }
+
+
+
+
+
 /* remove "padding" left and right from tabs */
 .titlebar-spacer { display: none !important; }
 
