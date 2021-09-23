@@ -24,6 +24,17 @@ Thank you [Nick](https://github.com/nicksundermeyer) for all the great suggestio
 ‎
 ‎
 
+## Contents
+- [Installation](#how-to-use-a-userchromecss-theme)
+- [Customisation](#customise-cascade-to-your-liking)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+
+‎
+‎
+‎
+‎
+‎
+
 ## How to use a userChrome.css theme
 
 1. Type `about:config` into your URL bar. Click on the **I accept the risk** button if you're shown a warning.
@@ -68,9 +79,14 @@ If you're using a custom colour scheme (e.g. [Firefox Color](https://color.firef
 ```css
  :root {
     
-    /*                   Dark       Light    */
-    --window-colour:    #1E2021; /* #FAFAFC; */
-    --secondary-colour: #191B1C; /* #EAEAEC; */
+    /* main window colour – toolbar & window background */
+    --window-colour:    #1E2021;
+
+    /* accent colour – active tab, button hover, ... */
+    --secondary-colour: #191B1C;
+
+    /* text and highlight colour */
+    --inverted-colour:  #FAFAFC;
 
 }
 ```
