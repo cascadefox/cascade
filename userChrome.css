@@ -380,7 +380,12 @@ window,
 
 
 #urlbar,
-#urlbar * { box-shadow: none !important; }
+#urlbar * {
+
+    outline: none !important;
+    box-shadow: none !important;
+
+}
 
 
 #urlbar-background { border: var(--uc-hover-colour) !important; }
