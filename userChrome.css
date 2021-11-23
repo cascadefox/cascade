@@ -107,8 +107,26 @@
      /* zoom indicator */
      #urlbar-zoom-button { display: none !important; }
 
-     /*  hides context burger menu BUT causes popups to be buggy at times */
-     #PanelUI-button { display: none !important; }
+     /* Make button small as Possible, hidden out of sight */
+     #PanelUI-button { margin-top: -5px }
+     #PanelUI-menu-button { 
+        list-style-image: none !important;
+        padding: 0px !important;
+        max-height: 1px;
+     }
+
+     #PanelUI-menu-button .toolbarbutton-icon {
+        width: 1px !important;
+     }
+
+     #PanelUI-menu-button .toolbarbutton-badge-stack {
+        padding: 0px !important;
+     }
+
+     /*    make URL bar minimum height there to change the lost burger menu    */
+     #nav-bar {
+         min-height: 33px !important;
+     }
 
      #reader-mode-button{ display: none !important; }
 
