@@ -17,7 +17,7 @@ What you get is a really simple one-line layout that works well with the new Pro
 On larger window resolutions Cascade will have a oneline layout which displays the URL bar and tab list next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
 
 If you're looking for a **mouse-friendly** clone please check out [Waterfall](https://github.com/crambaud/waterfall) by [Clément](https://github.com/crambaud)!<br>
-A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer) and [Abdallah](https://github.com/HeiWiper) for all the great suggestions for improvements! ♡
+A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer), [Abdallah](https://github.com/HeiWiper) and [Benyamin](https://github.com/benyaminl) for all the great suggestions for improvements! ♡
 
 ‎
 ‎
