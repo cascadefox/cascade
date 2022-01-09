@@ -6,8 +6,8 @@
   +-----+-----+-----+-----+-----+-----+-----+
 
 
-  Description:    Minimalist, Simple, Keyboard Centered and heavily based on SimpleFox. 🦊
-                  What you get is a really simple one-line layout using the new Proton UI.
+  Description:    Minimalist, Simple, Keyboard Centered and based on SimpleFox. 🦊
+                  What you get is a really simple responsive one-line layout using the new Proton UI.
 
                   > SimpleFox: https://github.com/migueravila/SimpleFox
 
@@ -19,8 +19,13 @@
   Repository:     https://github.com/andreasgrafen/ag.proton
 
 
-                  Thank you Nick for all the great suggestions for improvements! ♡
-                  (https://github.com/nicksundermeyer)
+                  Thank you Nick, Abdallah and Benyamin for all the great suggestions for improvements! ♡
+                  Nick:     https://github.com/nicksundermeyer)
+                  Abdallah: https://github.com/HeiWiper)
+                  Benyamin: https://github.com/benyaminl)
+
+                  If you're looking for a **mouse-friendly** clone please check out Waterfall.
+                  https://github.com/crambaud/waterfall
 
 *==============================================================================================*/
 
@@ -259,7 +264,7 @@ window,
     > .tab-stack
     > .tab-background { background: var(--uc-hover-colour) !important; }
 
-    
+
 /* multi tab selection */
 #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme { background: var(--uc-hover-colour) !important; }
 
