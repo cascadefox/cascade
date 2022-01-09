@@ -108,20 +108,19 @@
      #urlbar-zoom-button { display: none !important; }
 
      /* Make button small as Possible, hidden out of sight */
-     #PanelUI-button { margin-top: -5px; margin-bottom: 38px; }
-     #PanelUI-menu-button { 
-        list-style-image: none !important;
+     #PanelUI-button { margin-top: -5px; margin-bottom: 44px; }
+
+     #PanelUI-menu-button {
+
         padding: 0px !important;
         max-height: 1px;
+
+        list-style-image: none !important;
+
      }
 
-     #PanelUI-menu-button .toolbarbutton-icon {
-        width: 1px !important;
-     }
-
-     #PanelUI-menu-button .toolbarbutton-badge-stack {
-        padding: 0px !important;
-     }
+     #PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
+     #PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
 
      #reader-mode-button{ display: none !important; }
 
