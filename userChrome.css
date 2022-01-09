@@ -259,6 +259,10 @@ window,
     > .tab-stack
     > .tab-background { background: var(--uc-hover-colour) !important; }
 
+    
+/* multi tab selection */
+#tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected=true], [multiselected]) > .tab-stack > .tab-background:-moz-lwtheme { background: var(--uc-hover-colour) !important; }
+
 
 /* tab close button options */
 .tabbrowser-tab:not([pinned]) .tab-close-button { display: var(--show-tab-close-button) !important; }
