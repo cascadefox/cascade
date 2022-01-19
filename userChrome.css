@@ -159,42 +159,22 @@
 
 :root {
     
-    --uc-theme-colour:                          var(--window-colour);
-    --uc-hover-colour:                          var(--secondary-colour);
-    --uc-inverted-colour:                       var(--inverted-colour);
-    
+    --uc-theme-colour:                          var(--window-colour,    var(--toolbar-bgcolor));
+    --uc-hover-colour:                          var(--secondary-colour, rgba(0, 0, 0, 0.2));
+    --uc-inverted-colour:                       var(--inverted-colour,  var(--toolbar-color));
+
     --button-bgcolor:                           var(--uc-theme-colour)    !important;
     --button-hover-bgcolor:                     var(--uc-hover-colour)    !important;
     --button-active-bgcolor:                    var(--uc-hover-colour)    !important;
     
-    --toolbar-bgcolor:                          var(--uc-theme-colour)    !important;
-    --toolbarbutton-hover-background:           var(--uc-hover-colour)    !important;
-    --toolbarbutton-active-background:          var(--uc-hover-colour)    !important;
     --toolbarbutton-border-radius:              var(--uc-border-radius)   !important;
-    --lwt-toolbar-field-focus:                  var(--uc-theme-colour)    !important;
-    --toolbarbutton-icon-fill:                  var(--uc-inverted-colour) !important;
-    --toolbar-field-focus-background-color:     var(--secondary-colour)   !important;
-    --toolbar-field-color:                      var(--uc-inverted-colour) !important;
-    --toolbar-field-focus-color:                var(--uc-inverted-colour) !important;
     
-    --tabs-border-color:                        var(--uc-theme-colour)    !important;
     --tab-border-radius:                        var(--uc-border-radius)   !important;
     --lwt-text-color:                           var(--uc-inverted-colour) !important;
     --lwt-tab-text:                             var(--uc-inverted-colour) !important;
 
-    --lwt-sidebar-background-color:             var(--uc-hover-colour)    !important;
-    --lwt-sidebar-text-color:                   var(--uc-inverted-colour) !important;
-  
-    --arrowpanel-border-color:                  var(--uc-theme-colour)    !important;
     --arrowpanel-border-radius:                 var(--uc-border-radius)   !important;
-    --arrowpanel-background:                    var(--uc-theme-colour)    !important;
-    --arrowpanel-color:                         var(--inverted-colour)    !important;
-
-    --autocomplete-popup-highlight-background:  var(--uc-inverted-colour) !important;
-    --autocomplete-popup-highlight-color:       var(--uc-inverted-colour) !important;
-    --autocomplete-popup-hover-background:      var(--uc-inverted-colour) !important;
     
-
     --tab-block-margin: 2px !important;
     
 }
