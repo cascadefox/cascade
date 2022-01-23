@@ -5,6 +5,9 @@
 | █▄▄ | █▀█ | ▄▄█ | █▄▄ | █▀█ | █▄▀ | ██▄ |
 +-----+-----+-----+-----+-----+-----+-----+</pre></h1>
 
+[![Stargazers](https://img.shields.io/github/stars/andreasgrafen/cascade?colorA=1e1e28&colorB=c9cbff&style=for-the-badge)](https://github.com/andreasgrafen/cascade/stargazers)
+[![Issues](https://img.shields.io/github/issues/andreasgrafen/cascade?colorA=1e1e28&colorB=b5e8e0&style=for-the-badge)](https://github.com/andreasgrafen/cascade/issues)
+
 <b>Minimalist, Simple, Keyboard Centered and heavily based on SimpleFox. 🦊</b>
 </div>
 
