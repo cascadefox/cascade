@@ -4,6 +4,12 @@
   "description": "Minimalist, Simple, Keyboard Centered and heavily based on SimpleFox. 🦊",
   "manifest_version": 2,
 
+  "applications": {
+    "gecko": {
+      "id": "cascade@andreas.grafen.info"
+    }
+  },
+
   "theme": {
     "colors": {
       "tab_background_text": "#fbfbfe",
