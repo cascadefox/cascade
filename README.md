@@ -1,43 +1,29 @@
-<div align="center">
-
-<h1><pre>+-----+-----+-----+-----+-----+-----+-----+
-| █▀▀ | ▄▀█ | █▀▀ | █▀▀ | ▄▀█ | █▀▄ | █▀▀ |
-| █▄▄ | █▀█ | ▄▄█ | █▄▄ | █▀█ | █▄▀ | ██▄ |
-+-----+-----+-----+-----+-----+-----+-----+</pre></h1>
-
-[![Stargazers](https://img.shields.io/github/stars/andreasgrafen/cascade?colorA=1e1e28&colorB=c9cbff&style=for-the-badge)](https://github.com/andreasgrafen/cascade/stargazers)
-[![Issues](https://img.shields.io/github/issues/andreasgrafen/cascade?colorA=1e1e28&colorB=b5e8e0&style=for-the-badge)](https://github.com/andreasgrafen/cascade/issues)
-
-<b>Minimalist, Simple, Keyboard Centered and heavily based on SimpleFox. 🦊</b>
-</div>
-
-![Preview Image showing both the one-line style and the style for smaller screensizes.](assets/preview.png)
+<br><br>
+    
+# Cascade
+**A minimalist, simple, keyboard centered userChrome — heavily inspired by SimpleFox.** 🦊
 
 Cascade is a Firefox Theme based on [SimpleFox](https://github.com/migueravila/SimpleFox).
-This theme was known previously as "ag.proton"—but let's be honest: That sounds hella boring.
-What you get is a really simple one-line layout that works well with the new Proton UI.
+This theme was known previously as "ag.proton"—but let's be honest: That sounds hella boring. What you get is a really simple adaptive layout that works well with the new Proton UI. On larger window resolutions Cascade will have a oneline layout which displays the URL bar and tab list next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
 
-On larger window resolutions Cascade will have a oneline layout which displays the URL bar and tab list next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
+**[Installation](#how-to-use-a-userchromecss-theme) • [Customisation](#customise-cascade-to-your-liking) • [Keyboard Shortcuts](#keyboard-shortcuts)**
 
+<br>
+
+[![Stargazers](https://img.shields.io/github/stars/andreasgrafen/cascade?style=for-the-badge&color=F19066&labelColor=1E2021)](https://github.com/andreasgrafen/cascade/stargazers)
+[![Issues](https://img.shields.io/github/issues/andreasgrafen/cascade?style=for-the-badge&color=FC5C65&labelColor=1E2021)](https://github.com/andreasgrafen/cascade/issues)
+[![Discord](https://img.shields.io/discord/837559961194070026?label=FFCSS+Discord&style=for-the-badge&color=786FA6&labelColor=1E2021)](discord.gg/jrrw7Eg6sj)
+
+<br><br>
+
+![Preview Image showing both the one-line style and the style for smaller screensizes.](assets/preview.png)
+<div align="center">
+    
 If you're looking for a **mouse-friendly** clone please check out [Waterfall](https://github.com/crambaud/waterfall) by [Clément](https://github.com/crambaud)!<br>
 A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer), [Abdallah](https://github.com/HeiWiper) and [Benyamin](https://github.com/benyaminl) for all the great suggestions for improvements! ♡
+</div>
 
-‎
-‎
-‎
-‎
-‎
-
-## Contents
-- [Installation](#how-to-use-a-userchromecss-theme)
-- [Customisation](#customise-cascade-to-your-liking)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
-
-‎
-‎
-‎
-‎
-‎
+<br><br>
 
 ## How to use a userChrome.css theme
 
@@ -51,15 +37,10 @@ A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer), [Abdallah
 5. Copy your desired `userChrome.css` into that folder.
 6. *optional* Customise everything to your liking.
 
-‎
-‎
-‎
-‎
-‎
+<br><br>
 
 ## Customise Cascade to your liking
 
-‎
 ### Breakpoint
 
 Edit the `min-width` value to change the breakpoint size on which Cascade will switch to the oneline layout.
@@ -71,8 +52,8 @@ Edit the `min-width` value to change the breakpoint size on which Cascade will s
     
 }
 ```
+<br>
 
-‎
 ### Colours
 
 You can use your own colours for Cascade. To do so just edit the following block on top of the config section.
@@ -95,11 +76,7 @@ If you're using a custom colour scheme (e.g. [Firefox Color](https://color.firef
 }
 ```
 
-‎
-‎
-‎
-‎
-‎
+<br><br>
 
 ## Keyboard Shortcuts
 
@@ -120,7 +97,5 @@ Windows / Linux | MacOS | Description
 `Ctrl + Page Down`<br/>or `Ctrl + Tab` | `Command + Option + Right Arrow` | navigates to the next tab
 
 For the full list of shortcuts visit [the official Firefox website](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly).‎
-‎
-‎
-‎
-‎
+
+<br><br>
