@@ -422,7 +422,10 @@ window,
 
 
     /* move entire nav bar  */
-    #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 0 !important; }
+    #nav-bar {
+      margin: calc((var(--urlbar-min-height) * -1) - 10px) calc(100vw - var(--uc-urlbar-width)) 0 0 !important; 
+      padding-bottom: 2px !important;  
+    }
 
 
 } /* end media query */
