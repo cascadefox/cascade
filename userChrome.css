@@ -11,11 +11,11 @@
 
                   > SimpleFox: https://github.com/migueravila/SimpleFox
 
-                  
+
   Author:         Andreas Grafen
                   (https://andreas.grafen.info)
 
-                  
+
   Repository:     https://github.com/andreasgrafen/ag.proton
 
 
@@ -41,55 +41,85 @@
  * config settingsto your own liking. */
 
 
- :root {
-    
     /*---+---+---+---+---+---+---+
      | C | O | L | O | U | R | S |
      +---+---+---+---+---+---+---*/
-     
-     
+
     /* Comment this block out if you want to keep the default theme colour. */
     /* This will also work with custom colours from color.firefox.com. */
-  
-    /* Theme Colour Suggestions
-     *                              Dark        Light   */
-    --window-colour:               #1E2021; /* #FAFAFC; */
-    --secondary-colour:            #191B1C; /* #EAEAEC; */
-    --inverted-colour:             #FAFAFC; /* #1E2021; */
 
-     
-    /* Containter Tab Colours */
-    --uc-identity-color-blue:            #7ED6DF;
-    --uc-identity-color-turquoise:       #55E6C1;
-    --uc-identity-color-green:           #B8E994;
-    --uc-identity-color-yellow:          #F7D794;
-    --uc-identity-color-orange:          #F19066;
-    --uc-identity-color-red:             #FC5C65;
-    --uc-identity-color-pink:            #F78FB3;
-    --uc-identity-color-purple:          #786FA6;
-     
-    --uc-identity-color-blue-muted:      #7ED6DF99;
-    --uc-identity-color-turquoise-muted: #55E6C199;
-    --uc-identity-color-green-muted:     #B8E99499;
-    --uc-identity-color-yellow-muted:    #F7D794FF;
-    --uc-identity-color-orange-muted:    #F19066FF;
-    --uc-identity-color-red-muted:       #FC5C65FF;
-    --uc-identity-color-pink-muted:      #F78FB399;
-    --uc-identity-color-purple-muted:    #786FA699;
-     
-    
+
+    @media (prefers-color-scheme: dark) { :root {
+
+        --window-colour:                     #1E2021;
+        --secondary-colour:                  #191B1C;
+        --inverted-colour:                   #FAFAFC;
+
+        /* Containter Tab Colours */
+        --uc-identity-color-blue:            #7ED6DF;
+        --uc-identity-color-turquoise:       #55E6C1;
+        --uc-identity-color-green:           #B8E994;
+        --uc-identity-color-yellow:          #F7D794;
+        --uc-identity-color-orange:          #F19066;
+        --uc-identity-color-red:             #FC5C65;
+        --uc-identity-color-pink:            #F78FB3;
+        --uc-identity-color-purple:          #786FA6;
+
+        --uc-identity-color-blue-muted:      #7ED6DF99;
+        --uc-identity-color-turquoise-muted: #55E6C199;
+        --uc-identity-color-green-muted:     #B8E99499;
+        --uc-identity-color-yellow-muted:    #F7D794CC;
+        --uc-identity-color-orange-muted:    #F19066FF;
+        --uc-identity-color-red-muted:       #FC5C65FF;
+        --uc-identity-color-pink-muted:      #F78FB399;
+        --uc-identity-color-purple-muted:    #786FA6FF;
+
+    }}
+
+
+
+    @media (prefers-color-scheme: light) { :root {
+
+        --window-colour:                     #FAFAFC;
+        --secondary-colour:                  #EAEAEC;
+        --inverted-colour:                   #1E2021;
+
+        /* Containter Tab Colours */
+        --uc-identity-color-blue:            #1D65F5;
+        --uc-identity-color-turquoise:       #209FB5;
+        --uc-identity-color-green:           #40A02B;
+        --uc-identity-color-yellow:          #E49320;
+        --uc-identity-color-orange:          #FE640B;
+        --uc-identity-color-red:             #FC5C65;
+        --uc-identity-color-pink:            #EC83D0;
+        --uc-identity-color-purple:          #822FEE;
+
+        --uc-identity-color-blue-muted:      #1D65F5FF;
+        --uc-identity-color-turquoise-muted: #209FB5FF;
+        --uc-identity-color-green-muted:     #40A02BFF;
+        --uc-identity-color-yellow-muted:    #E49320FF;
+        --uc-identity-color-orange-muted:    #FE640BFF;
+        --uc-identity-color-red-muted:       #FC5C65FF;
+        --uc-identity-color-pink-muted:      #EC83D0FF;
+        --uc-identity-color-purple-muted:    #822FEEFF;
+
+    }}
+
+
+
+:root {
+
     /* URL colour in URL bar suggestions */
     --urlbar-popup-url-color: var(--uc-identity-color-purple) !important;
-     
-     
-     
+
+
     /*---+---+---+---+---+---+---+
      | V | I | S | U | A | L | S |
      +---+---+---+---+---+---+---*/
-    
+
     /* global border radius */
     --uc-border-radius: 0;
-     
+
     /* dynamic url bar width settings */
     --uc-urlbar-width: clamp(200px, 40vw, 500px);
 
@@ -98,13 +128,13 @@
     --uc-inactive-tab-width: clamp( 50px, 15vw, 200px);
 
     /* if active always shows the tab close button */
-    --show-tab-close-button: none; /* DEFAULT: -moz-inline-box; */ 
+    --show-tab-close-button: none; /* DEFAULT: -moz-inline-box; */
 
     /* if active only shows the tab close button on hover*/
     --show-tab-close-button-hover: none; /* DEFAULT: -moz-inline-box; */
-     
+
     /* adds left and right margin to the container-tabs indicator */
-    --container-tabs-indicator-margin: 5px;
+    --container-tabs-indicator-margin: 10px;
 
 }
 
@@ -142,7 +172,7 @@
      #tracking-protection-icon-container { display: none !important; }
 
      /* #identity-box { display: none !important } /* hides encryption AND permission items */
-     #identity-permission-box { display: none !important; } /* only hodes permission items */
+     #identity-permission-box { display: none !important; } /* only hides permission items */
 
      /* e.g. playing indicator (secondary - not icon) */
      .tab-secondary-label { display: none !important; }
@@ -167,7 +197,7 @@
  * Just tweak it if you want to tweak the overall layout. c: */
 
 :root {
-    
+
     --uc-theme-colour:                          var(--window-colour,    var(--toolbar-bgcolor));
     --uc-hover-colour:                          var(--secondary-colour, rgba(0, 0, 0, 0.2));
     --uc-inverted-colour:                       var(--inverted-colour,  var(--toolbar-color));
@@ -175,17 +205,17 @@
     --button-bgcolor:                           var(--uc-theme-colour)    !important;
     --button-hover-bgcolor:                     var(--uc-hover-colour)    !important;
     --button-active-bgcolor:                    var(--uc-hover-colour)    !important;
-    
+
     --toolbarbutton-border-radius:              var(--uc-border-radius)   !important;
-    
+
     --tab-border-radius:                        var(--uc-border-radius)   !important;
     --lwt-text-color:                           var(--uc-inverted-colour) !important;
     --lwt-tab-text:                             var(--uc-inverted-colour) !important;
 
     --arrowpanel-border-radius:                 var(--uc-border-radius)   !important;
-    
+
     --tab-block-margin: 2px !important;
-    
+
 }
 
 
@@ -202,7 +232,7 @@ window,
 #nav-bar {
 
     -moz-appearance: none !important;
-    
+
     border: none !important;
     box-shadow: none !important;
     background: var(--uc-theme-colour) !important;
@@ -273,7 +303,7 @@ window,
     > .tab-stack
     > .tab-background
     > .tab-context-line {
-    
+
         margin: -1px var(--container-tabs-indicator-margin) 0 var(--container-tabs-indicator-margin) !important;
         height: 1px !important;
 
@@ -311,7 +341,7 @@ window,
   opacity: 1 !important; fill-opacity: 0.8 !important;
 
   color: currentColor !important;
-    
+
   stroke: var(--uc-theme-colour) !important;
   background-color: var(--uc-theme-colour) !important;
 
@@ -320,7 +350,7 @@ window,
 
 /* change the colours of the speaker icon on active tab to match tab colours */
 .tabbrowser-tab[selected] .tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
-        
+
   stroke: var(--uc-hover-colour) !important;
   background-color: var(--uc-hover-colour) !important;
 
@@ -335,7 +365,7 @@ window,
   top: 0 !important;
 
   padding: 0 !important;
-  margin-inline-end: 5.5px !important; 
+  margin-inline-end: 5.5px !important;
   inset-inline-end: 0 !important;
 
 }
@@ -344,24 +374,24 @@ window,
 .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 .tab-icon-overlay:not([crashed])[muted]:hover,
 .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
-    
+
     color: currentColor !important;
     stroke: var(--uc-inverted-colour) !important;
     background-color: var(--uc-inverted-colour) !important;
     fill-opacity: 0.95 !important;
-    
+
 }
 
 
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[muted]:hover,
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
-    
+
     color: currentColor !important;
     stroke: var(--uc-inverted-colour) !important;
     background-color: var(--uc-inverted-colour) !important;
     fill-opacity: 0.95 !important;
-    
+
 }
 
 
@@ -419,14 +449,14 @@ window,
     > .urlbarView-row-inner,
 .urlbarView-row[selected]
     > .urlbarView-row-inner { background: var(--uc-hover-colour) !important; }
-    
+
 
 
 
 
 /* transition to oneline */
-@media (min-width: 1000px) { 
-    
+@media (min-width: 1000px) {
+
 
     /* move tabs bar over */
     #TabsToolbar { margin-left: var(--uc-urlbar-width) !important; }
