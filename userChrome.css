@@ -454,6 +454,26 @@ window,
 
 
 
+#statuspanel {
+
+    position: absolute !important;
+    bottom: 12px !important; left: 12px !important;
+
+}
+
+
+#statuspanel #statuspanel-label {
+
+    border: none !important;
+    border-radius: var(--uc-border-radius) !important;
+    background: var(--uc-theme-colour) !important;
+
+}
+
+
+
+
+
 /* transition to oneline */
 @media (min-width: 1000px) {
 
