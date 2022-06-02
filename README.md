@@ -18,9 +18,16 @@ This theme was known previously as "ag.proton"—but let's be honest: That sound
 
 ![Preview Image showing both the one-line style and the style for smaller screensizes.](assets/preview.png)
 <div align="center">
-    
+ 
 If you're looking for a **mouse-friendly** clone please check out [Waterfall](https://github.com/crambaud/waterfall) by [Clément](https://github.com/crambaud)!<br>
 A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer), [Abdallah](https://github.com/HeiWiper) and [Benyamin](https://github.com/benyaminl) for all the great suggestions for improvements! ♡
+ 
+--
+ 
+If you *really* like my work you can buy me a coffee to fuel further development.<br>
+While appreciated it's ofc by no means necessary. ♡<br><br>
+[![Buy me a Coffee <3](https://img.shields.io/static/v1?label=&message=Buy%20me%20a%20Coffee&style=for-the-badge&color=e6e9ef&labelColor=ccd0da&logo=kofi)](https://ko-fi.com/andreasgrafen)
+
 </div>
 
 <br><br>
