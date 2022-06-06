@@ -1,10 +1,11 @@
 <br><br>
     
 # Cascade
-**A minimalist, simple, keyboard centered userChrome — heavily inspired by SimpleFox.** 🦊
+**A minimalistic and keyboard centered userChrome**
 
-Cascade is a Firefox Theme based on [SimpleFox](https://github.com/migueravila/SimpleFox).
-This theme was known previously as "ag.proton"—but let's be honest: That sounds hella boring. What you get is a really simple adaptive layout that works well with the new Proton UI. On larger window resolutions Cascade will have a oneline layout which displays the URL bar and tab list next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
+Cascade aims to remove a lot of the subjective clutter default Firefox comes with. The theme is also highly inspired by the stylistic choices of [SimpleFox](https://github.com/migueravila/SimpleFox) 🦊 by [Miguel Ávila](https://github.com/migueravila).
+
+This theme was known previously as »*ag.proton*« — but let's be honest: That sounds hella boring. What you get is a really simple adaptive layout that works well with the new Proton UI. On larger window resolutions Cascade will have a oneline layout which displays the URL bar and tab list next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
 
 **[Installation](#how-to-use-a-userchromecss-theme) • [Customisation](#customise-cascade-to-your-liking) • [Keyboard Shortcuts](#keyboard-shortcuts)**
 
@@ -66,22 +67,7 @@ Edit the `min-width` value to change the breakpoint size on which Cascade will s
 You can use your own colours for Cascade. To do so just edit the following block on top of the config section.
 By default it will use a dark theme but colour suggestions for light theme users are given as well. Please also change Firefox' theme in your settings to make sure you get the best compatibility.
 
-If you're using a custom colour scheme (e.g. [Firefox Color](https://color.firefox.com)) you can comment out the entire block to use the default colours provided by the Theme Addon.
-
-```css
- :root {
-    
-    /* main window colour – toolbar & window background */
-    --window-colour:    #1E2021;
-
-    /* accent colour – active tab, button hover, ... */
-    --secondary-colour: #191B1C;
-
-    /* text and highlight colour */
-    --inverted-colour:  #FAFAFC;
-
-}
-```
+If you're using a custom colour scheme (e.g. [Firefox Color](https://color.firefox.com)) you can comment out the entire [colour-definitions block](https://github.com/andreasgrafen/cascade/blob/main/userChrome.css#L44=) to use the default colours provided by the Theme Addon.
 
 <br><br>
 
