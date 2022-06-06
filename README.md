@@ -20,7 +20,7 @@ This theme was known previously as "ag.proton"—but let's be honest: That sound
 <div align="center">
  
 If you're looking for a **mouse-friendly** clone please check out [Waterfall](https://github.com/crambaud/waterfall) by [Clément](https://github.com/crambaud)!<br>
-A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer), [Abdallah](https://github.com/HeiWiper) and [Benyamin](https://github.com/benyaminl) for all the great suggestions for improvements! ♡
+A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer), [Abdallah](https://github.com/HeiWiper), [Benyamin](https://github.com/benyaminl) and [Wael](https://github.com/wael444) for all the great suggestions and improvements!
  
 --
  
