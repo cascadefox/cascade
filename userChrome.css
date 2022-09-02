@@ -169,7 +169,10 @@
      #reader-mode-button{ display: none !important; }
 
      /* tracking protection shield icon */
-     #tracking-protection-icon-container { display: none !important; }
+     #tracking-protection-icon-container { 
+        display: none !important;
+	padding-top: 5.8px !important;
+     }
 
      /* #identity-box { display: none !important } /* hides encryption AND permission items */
      #identity-permission-box { display: none !important; } /* only hides permission items */
