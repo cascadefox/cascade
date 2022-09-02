@@ -168,10 +168,10 @@
 
      #reader-mode-button{ display: none !important; }
 
-     /* tracking protection shield icon */
+     /* tracking protection shield icon, change "none" to "inline-block" if you want to see it */
      #tracking-protection-icon-container { 
-        display: none !important;
-	padding-top: 5.8px !important;
+	     display: none !important;
+	     padding-top: 5.8px !important;
      }
 
      /* #identity-box { display: none !important } /* hides encryption AND permission items */
