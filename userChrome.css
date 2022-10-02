@@ -454,15 +454,9 @@ window,
 
 
 
-#statuspanel {
-
-    position: absolute !important;
-    bottom: 12px !important; left: 12px !important;
-
-}
-
-
 #statuspanel #statuspanel-label {
+
+    margin: 0 0 12px 12px !important;
 
     border: none !important;
     border-radius: var(--uc-border-radius) !important;
