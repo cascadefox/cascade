@@ -17,7 +17,7 @@ This theme was known previously as »*ag.proton*« — but let's be honest: That
 
 <br><br>
 
-**updated preview coming soon™**
+![Cascade Preview](assets/preview.webp)
 
 <div align="center">
  
