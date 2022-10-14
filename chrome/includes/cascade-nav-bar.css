@@ -12,8 +12,8 @@
 #urlbar,
 #urlbar * {
 
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 
 }
 
@@ -22,16 +22,16 @@
 
 
 #urlbar[focused='true']
-    > #urlbar-background,
+  > #urlbar-background,
 #urlbar:not([open])
-    > #urlbar-background { background: transparent !important; }
+  > #urlbar-background { background: transparent !important; }
 
 
 #urlbar[open]
-    > #urlbar-background { background: var(--toolbar-field-background-color) !important; }
+  > #urlbar-background { background: var(--toolbar-field-background-color) !important; }
 
 
 .urlbarView-row:hover
-    > .urlbarView-row-inner,
+  > .urlbarView-row-inner,
 .urlbarView-row[selected]
-    > .urlbarView-row-inner { background: var(--toolbar-bgcolor) !important; }
+  > .urlbarView-row-inner { background: var(--toolbar-bgcolor) !important; }

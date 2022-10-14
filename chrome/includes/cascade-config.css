@@ -4,16 +4,23 @@
 
 
 :root {
-  
+
   /*  Global Border Radius
    *  applied to ALL UI elements
    */ --uc-border-radius: 0px;
-  
+
+
+  /*  The distance the Statuspanel floats
+   *  away from the window border
+   *  0 places directly in the corner
+   */ --uc-status-panel-spacing: 12px;
+
 }
 
 
 /* remove window control buttons */
 .titlebar-buttonbox-container { display: none !important; }
+
 
 #pageActionButton { display: none !important; }
 
@@ -31,13 +38,13 @@
 
 
 :root {
-  
+
   /*  Position of the Personal Toolbar
    *  possible values:
    *  0 – toolbar on top
    *  4 – toolbar on bottom
    */ --uc-toolbar-position: 0;
-  
+
   /*  Darken the Personal Toolbar by X amount
    *  where X = 1 means pure black
    *  and X = 0 means no darkening at all
@@ -100,23 +107,38 @@
 
 
 :root {
-  
-    /* dynamic tab width */
-    --uc-active-tab-width:   clamp(100px, 30vw, 300px);
-    --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
-  
-    /* if active always shows the tab close button */
-    --show-tab-close-button: none; /* DEFAULT: -moz-inline-box; */
 
-    /* if active only shows the tab close button on hover*/
-    --show-tab-close-button-hover: none; /* DEFAULT: -moz-inline-box; */
-  
-  --container-tabs-indicator-margin: 10px;
-  
-  --uc-identity-glow: 0 1px 10px 1px;
- 
+  /*  Allow tabs to have dynamic widths based on
+   *  the Tab Bars maximum width
+   */ --uc-active-tab-width:   clamp(100px, 30vw, 300px);
+      --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
+
+
+  /*  Enable this to always show the Tab Close button
+   *  possible values:
+   *  show: -moz-inline-block
+   *  hide: none
+   */ --show-tab-close-button: none;
+
+  /*  Enable this to only show the Tab Close button on tab hover
+   *  possible values:
+   *  show: -moz-inline-block
+   *  hide: none
+   */ --show-tab-close-button-hover: none;
+
+
+  /*  Left and Right "dip" of the container indicator
+   *  0px equals tab width
+   *  higer values make the indicator smaller
+   */ --container-tabs-indicator-margin: 10px;
+
+  /*  Amount of Glow to add to the container indicator
+   *  Setting it to 0 disables the Glow
+   */ --uc-identity-glow: 0 1px 5px 1px;
+
 }
 
 
-/* e.g. playing indicator (secondary - not icon) */
+/* Hide the secondary Tab Label
+ * e.g. playing indicator (the text, not the icon) */
 .tab-secondary-label { display: none !important; }

@@ -1,7 +1,7 @@
 /* remove gap after pinned tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
-    > #tabbrowser-arrowscrollbox
-    > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
+  > #tabbrowser-arrowscrollbox
+  > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
 
 
 
@@ -9,15 +9,14 @@
 
 /* remove tab shadow */
 .tabbrowser-tab
-    >.tab-stack
-    > .tab-background { box-shadow: none !important;  }
+  >.tab-stack
+  > .tab-background { box-shadow: none !important;  }
 
 
 /* multi tab selection */
 #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([multiselected])
   > .tab-stack
   > .tab-background:-moz-lwtheme { outline-color: var(--toolbarseparator-color) !important; }
-
 
 
 
@@ -41,14 +40,14 @@
 
 /* container tabs indicator */
 .tabbrowser-tab[usercontextid]
-    > .tab-stack
-    > .tab-background
-    > .tab-context-line {
+  > .tab-stack
+  > .tab-background
+  > .tab-context-line {
 
-        margin: -1px var(--container-tabs-indicator-margin) 0 var(--container-tabs-indicator-margin) !important;
-        height: 1px !important;
+    margin: -1px var(--container-tabs-indicator-margin) 0 var(--container-tabs-indicator-margin) !important;
+    height: 1px !important;
 
-        box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
+    box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
 
 }
 
@@ -118,10 +117,10 @@
 .tab-icon-overlay:not([crashed])[muted]:hover,
 .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
 
-    color: currentColor !important;
-    stroke: var(--toolbar-color) !important;
-    background-color: var(--toolbar-color) !important;
-    fill-opacity: 0.95 !important;
+  color: currentColor !important;
+  stroke: var(--toolbar-color) !important;
+  background-color: var(--toolbar-color) !important;
+  fill-opacity: 0.95 !important;
 
 }
 
@@ -130,10 +129,10 @@
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[muted]:hover,
 .tabbrowser-tab[selected] .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
 
-    color: currentColor !important;
-    stroke: var(--toolbar-color) !important;
-    background-color: var(--toolbar-color) !important;
-    fill-opacity: 0.95 !important;
+  color: currentColor !important;
+  stroke: var(--toolbar-color) !important;
+  background-color: var(--toolbar-color) !important;
+  fill-opacity: 0.95 !important;
 
 }
 
