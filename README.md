@@ -5,7 +5,7 @@
 
 Cascade aims to remove a lot of the subjective clutter default Firefox comes with. The theme is also highly inspired by the stylistic choices of [SimpleFox](https://github.com/migueravila/SimpleFox) 🦊 by [Miguel Ávila](https://github.com/migueravila).
 
-This theme was known previously as »*ag.proton*« — but let's be honest: That sounds hella boring. What you get is a really simple adaptive layout that works well with the new Proton UI. On larger window resolutions Cascade will have a oneline layout which displays the URL bar and tab list next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
+This theme was known previously as »*ag.proton*« — but let's be honest: That sounds hella boring. What you get is a really simple adaptive layout that works well with the new Proton UI. By default — on larger screen resolutions – Cascade will transition to a Oneline layout which displays the URL Bar and Tab Bar next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
 
 **[Installation](#how-to-use-a-userchromecss-theme) • [Customisation](#customise-cascade-to-your-liking) • [Keyboard Shortcuts](#keyboard-shortcuts)**
 
@@ -17,13 +17,9 @@ This theme was known previously as »*ag.proton*« — but let's be honest: That
 
 <br><br>
 
-![Preview Image showing both the one-line style and the style for smaller screensizes.](assets/preview.png)
+**updated preview coming soon™**
+
 <div align="center">
- 
-If you're looking for a **mouse-friendly** clone please check out [Waterfall](https://github.com/crambaud/waterfall) by [Clément](https://github.com/crambaud)!<br>
-A big **»Thank you«** to [Nick](https://github.com/nicksundermeyer), [Abdallah](https://github.com/HeiWiper), [Benyamin](https://github.com/benyaminl) and [Wael](https://github.com/wael444) for all the great suggestions and improvements!
- 
---
  
 If you *really* like my work you can buy me a coffee to fuel further development.<br>
 While appreciated it's ofc by no means necessary. ♡<br><br>
@@ -36,38 +32,19 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 ## How to use a userChrome.css theme
 
 1. Type `about:config` into your URL bar. Click on the **I accept the risk** button if you're shown a warning.
-2. Seach for **`toolkit.legacyUserProfileCustomizations.stylesheets`**, **`layers.acceleration.force-enabled`**, **`gfx.webrender.all`** and **`svg.context-properties.content.enabled`** and set them to **`true`**.
+2. Seach for **`toolkit.legacyUserProfileCustomizations.stylesheets`** and set it to **`true`**.
 3. Go to your profile folder:
     - Linux: `$HOME/.mozilla/firefox/######.default-release/`
     - MacOS: `Users/[USERNAME]/Library/Application Support/Firefox/Profiles/######.default-release`
     - Windows: `C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release`
-4. If it doesn't exist already create a folder called `chrome`.
-5. Copy your desired `userChrome.css` into that folder.
-6. *optional* Customise everything to your liking.
+4. Copy the `chrome` folder into your profile.
+5. *optional* Customise everything to your liking.
 
 <br><br>
 
 ## Customise Cascade to your liking
 
-### Breakpoint
-
-Edit the `min-width` value to change the breakpoint size on which Cascade will switch to the oneline layout.
-
-```css
-@media (min-width: 1000px) {
-    
-    [...]
-    
-}
-```
-<br>
-
-### Colours
-
-You can use your own colours for Cascade. To do so just edit the following block on top of the config section.
-By default it will use a dark theme but colour suggestions for light theme users are given as well. Please also change Firefox' theme in your settings to make sure you get the best compatibility.
-
-If you're using a custom colour scheme (e.g. [Firefox Color](https://color.firefox.com)) you can comment out the entire [colour-definitions block](https://github.com/andreasgrafen/cascade/blob/main/userChrome.css#L44=) to use the default colours provided by the Theme Addon.
+**soon™**
 
 <br><br>
 
