@@ -134,7 +134,7 @@
 
   /*  Amount of Glow to add to the container indicator
    *  Setting it to 0 disables the Glow
-   */ --uc-identity-glow: 0 1px 5px 1px;
+   */ --uc-identity-glow: 0 1px 10px 1px;
 
 }
 
