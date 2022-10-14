@@ -1,0 +1,122 @@
+/*---+---+---+---+---+---+
+ | G | L | O | B | A | L |
+ +---+---+---+---+---+---*/
+
+
+:root {
+  
+  /*  Global Border Radius
+   *  applied to ALL UI elements
+   */ --uc-border-radius: 0px;
+  
+}
+
+
+/* remove window control buttons */
+.titlebar-buttonbox-container { display: none !important; }
+
+#pageActionButton { display: none !important; }
+
+#PanelUI-menu-button { padding: 0px !important; }
+#PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
+#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
+
+
+
+
+
+/*---+---+---+---+---+---+---+
+ | T | O | O | L | B | A | R |
+ +---+---+---+---+---+---+---*/
+
+
+:root {
+  
+  /*  Position of the Personal Toolbar
+   *  possible values:
+   *  0 – toolbar on top
+   *  4 – toolbar on bottom
+   */ --uc-toolbar-position: 0;
+  
+  /*  Darken the Personal Toolbar by X amount
+   *  where X = 1 means pure black
+   *  and X = 0 means no darkening at all
+   */ --uc-darken-toolbar: .2;
+
+}
+
+
+
+
+
+/*---+---+---+---+---+---+---+
+ | U | R | L | — | B | A | R |
+ +---+---+---+---+---+---+---*/
+
+
+:root {
+
+  /*  Width of the URL Bar for the Oneline layout
+   *  If enabled the max-width is applied on focus
+   *  otherwise the URL Bar will always be it's min-width
+   */ --uc-urlbar-min-width: 35vw;
+      --uc-urlbar-max-width: 35vw;
+
+  /*  Position of the URL Bar
+   *  possible values:
+   *  1 – tabs on the right
+   *  3 – tabs on the left
+   */ --uc-urlbar-position: 1;
+
+}
+
+
+/* Disable the Navigation Buttons */
+#back-button,
+#forward-button { display: none !important; }
+
+/* Disables the Tracking Protection Shield */
+/* #tracking-protection-icon-container { display: none !important; } */
+
+/* Encryption and Permissions icons */
+  /* Only hides permission items */
+  #identity-permission-box { display: none !important; }
+  /* Hides encryption AND permission items */
+  /* #identity-box { display: none !important } */
+
+/* Hide everything BUT the zoom indicator within the URL Bar */
+#page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; }
+
+/* Hide the »Go«-arrow in the URL Bar */
+#urlbar-go-button { display: none !important; }
+
+
+
+
+
+/*---+---+---+---+---+---+---+
+ | T | A | B | — | B | A | R |
+ +---+---+---+---+---+---+---*/
+
+
+:root {
+  
+    /* dynamic tab width */
+    --uc-active-tab-width:   clamp(100px, 30vw, 300px);
+    --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
+  
+    /* if active always shows the tab close button */
+    --show-tab-close-button: none; /* DEFAULT: -moz-inline-box; */
+
+    /* if active only shows the tab close button on hover*/
+    --show-tab-close-button-hover: none; /* DEFAULT: -moz-inline-box; */
+  
+  --container-tabs-indicator-margin: 10px;
+  
+  --uc-identity-glow: 0 1px 10px 1px;
+ 
+}
+
+
+/* e.g. playing indicator (secondary - not icon) */
+.tab-secondary-label { display: none !important; }

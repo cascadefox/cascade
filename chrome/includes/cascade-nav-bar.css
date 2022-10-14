@@ -1,0 +1,37 @@
+#nav-bar {
+
+  padding-block-start: 0px !important;
+
+  border:     none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+
+}
+
+
+#urlbar,
+#urlbar * {
+
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+
+#urlbar-background { border: transparent !important; }
+
+
+#urlbar[focused='true']
+    > #urlbar-background,
+#urlbar:not([open])
+    > #urlbar-background { background: transparent !important; }
+
+
+#urlbar[open]
+    > #urlbar-background { background: var(--toolbar-field-background-color) !important; }
+
+
+.urlbarView-row:hover
+    > .urlbarView-row-inner,
+.urlbarView-row[selected]
+    > .urlbarView-row-inner { background: var(--toolbar-bgcolor) !important; }
