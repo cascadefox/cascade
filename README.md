@@ -127,6 +127,23 @@ If you'd like to have Cascade transition into it's online layout on either small
 2. Copy the contents of [integrations/tabcenter-reborn.css](integrations/tabcenter-reborn.css) into the Addons settings
 3. Import the [includes/cascade-tcr.css](chrome/includes/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
 
+<br>
+
+### Catppuccin
+
+![Catppuccin Mocha](assets/ctp-mocha.webp)
+![Catppuccin Macchiato](assets/ctp-macchiato.webp)
+![Catppuccin Frappé](assets/ctp-frappe.webp)
+![Catppuccin Latte](assets/ctp-latte.webp)
+
+This simply offers premade colour configs for [Catppuccin](https://github.com/catppuccin/catppuccin). There are variants for each dark mode flavour — [Mocha](integrations/catppuccin/cascade-mocha.css), [Macchiato](integrations/catppuccin/cascade-macchiato.css) and [Frappé](integrations/catppuccin/cascade-frappe.css) — all of them come with Latte as their light mode.
+
+#### How to set it up
+1. Copy your desired flavour config from [integrations/catppuccin](integrations/catppuccin) into the [includes](includes) folder
+2. Replace the colour include in the [userChrome.css](chrome/userChrome.css) with your desired flavour file
+
+> Alternatively you can also just copy the contents of your desired flavour config into the colour config file.
+
 <br><br><br>
 
 ## Keyboard Shortcuts
