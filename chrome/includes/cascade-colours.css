@@ -1,9 +1,10 @@
-:root {
+/*---+---+---+---+---+---+---+
+ | C | O | L | O | U | R | S |
+ +---+---+---+---+---+---+---*/
 
-  /*---+---+---+---+---+---+---+
-   | C | O | L | O | U | R | S |
-   +---+---+---+---+---+---+---*/
 
+@media (prefers-color-scheme: dark) { :root {
+  
   /* These colours are (mainly) used by the
      Container Tabs Plugin */
   --uc-identity-colour-blue:      #7ED6DF;
@@ -14,15 +15,39 @@
   --uc-identity-colour-red:       #FC5C65;
   --uc-identity-colour-pink:      #F78FB3;
   --uc-identity-colour-purple:    #786FA6;
-
+  
   /*  Cascades main Colour Scheme */
   --uc-base-colour:               #1E2021;
   --uc-highlight-colour:          #191B1C;
   --uc-inverted-colour:           #FAFAFC;
   --uc-muted-colour:              #AAAAAC;
   --uc-accent-colour:             var(--uc-identity-colour-purple);
+  
+}}
 
-}
+
+@media (prefers-color-scheme: light) { :root {
+  
+  /* These colours are (mainly) used by the
+     Container Tabs Plugin */
+  --uc-identity-colour-blue:      #1D65F5;
+  --uc-identity-colour-turquoise: #209FB5;
+  --uc-identity-colour-green:     #40A02B;
+  --uc-identity-colour-yellow:    #E49320;
+  --uc-identity-colour-orange:    #FE640B;
+  --uc-identity-colour-red:       #FC5C65;
+  --uc-identity-colour-pink:      #EC83D0;
+  --uc-identity-colour-purple:    #822FEE;
+  
+  /*  Cascades main Colour Scheme */
+  --uc-base-colour:               #FAFAFC;
+  --uc-highlight-colour:          #DADADC;
+  --uc-inverted-colour:           #1E2021;
+  --uc-muted-colour:              #191B1C;
+  --uc-accent-colour:             var(--uc-identity-colour-purple);
+  
+}}
+
 
 
 
