@@ -48,6 +48,19 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 
 <br><br>
 
+## Addon Integration
+
+### Tab Center Reborn — Vertical Tabs
+
+![Tab Center Reborn Vertical Tabs Preview](assets/cascade-tcr.webp)
+
+#### How to set it up
+1. Download the [Tab Center Reborn Addon](https://addons.mozilla.org/en-GB/firefox/addon/tabcenter-reborn/)
+2. Copy the contents of [addons/tabcenter-reborn.css](addons/tabcenter-reborn.css) into the Addons settings
+3. Import the [includes/cascade-tcr.css](chrome/includes/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
+
+<br><br>
+
 ## Keyboard Shortcuts
 
 This userstyle was made for a keyboard centered usage, like Tilling Window Manager users or just cool people that loves them!
