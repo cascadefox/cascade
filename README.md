@@ -116,7 +116,7 @@ If you'd like to have Cascade transition into it's online layout on either small
 
 <br><br>
 
-## Addon Integration
+## Integrations
 
 ### Tab Center Reborn — Vertical Tabs
 
@@ -124,7 +124,7 @@ If you'd like to have Cascade transition into it's online layout on either small
 
 #### How to set it up
 1. Download the [Tab Center Reborn Addon](https://addons.mozilla.org/en-GB/firefox/addon/tabcenter-reborn/)
-2. Copy the contents of [addons/tabcenter-reborn.css](addons/tabcenter-reborn.css) into the Addons settings
+2. Copy the contents of [integrations/tabcenter-reborn.css](integrations/tabcenter-reborn.css) into the Addons settings
 3. Import the [includes/cascade-tcr.css](chrome/includes/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
 
 <br><br>
