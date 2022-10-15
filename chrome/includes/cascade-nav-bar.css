@@ -12,6 +12,8 @@
 #urlbar,
 #urlbar * {
 
+  padding-block-start: 1px !important;
+
   outline: none !important;
   box-shadow: none !important;
 
