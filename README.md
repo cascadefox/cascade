@@ -53,6 +53,35 @@ If you want to use Cascade with the Browsers default colours, or custom Firefox 
 
 <br>
 
+### Sort the UI like you want it
+
+In the [Cascade config](chrome/includes/cascade-config.css) you can set different ways of how the UI elements are layed out. The URL Bar, Tab Bar and Personal Toolbar can be arranged in different stacks; do you want the Toolbar to be on top or the URL and Tab Bar? Tabs on the left with the URL Bar to the right? No problem!
+
+```css
+/*  Position of the Personal Toolbar
+ *  possible values:
+ *  0 – toolbar on top
+ *  4 – toolbar on bottom
+ */ --uc-toolbar-position: 0;
+```
+
+```css
+/*  Position of the URL Bar
+ *  possible values:
+ *  1 – tabs on the right
+ *  3 – tabs on the left
+ */ --uc-urlbar-position: 1;
+```
+
+<details>
+<summary>Previews</summary>
+
+![Toolbar on top](assets/cascade-toolbar-top.webp)
+![Toolbar an the bottom](assets/cascade-toolbar-bottom.webp)
+![URL Bar on the right](assets/cascade-urlbar-right.webp)
+
+</details><br>
+
 ### URL Bar Customisation
 
 You can freely set your desired URL Bar width from within the [config](chrome/includes/cascade-config.css) where the `min-width` setting is the default URL Bar width and `max-width` is the width of the focused URL Bar. Those can be different in order to make more room for the URL Bar when you actually want to use it.
