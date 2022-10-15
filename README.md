@@ -131,12 +131,19 @@ If you'd like to have Cascade transition into it's online layout on either small
 
 ### Catppuccin
 
-![Catppuccin Mocha](assets/ctp-mocha.webp)
-![Catppuccin Macchiato](assets/ctp-macchiato.webp)
-![Catppuccin Frappé](assets/ctp-frappe.webp)
-![Catppuccin Latte](assets/ctp-latte.webp)
+![Cascade Catppuccin Preview](assets/cascade-ctp.webp)
 
 This simply offers premade colour configs for [Catppuccin](https://github.com/catppuccin/catppuccin). There are variants for each dark mode flavour — [Mocha](integrations/catppuccin/cascade-mocha.css), [Macchiato](integrations/catppuccin/cascade-macchiato.css) and [Frappé](integrations/catppuccin/cascade-frappe.css) — all of them come with Latte as their light mode.
+
+<details>
+<summary>Individual Previews</summary>
+
+![Catppuccin Mocha](assets/cascade-ctp-mocha.webp)
+![Catppuccin Macchiato](assets/cascade-ctp-macchiato.webp)
+![Catppuccin Frappé](assets/cascade-ctp-frappe.webp)
+![Catppuccin Latte](assets/cascade-ctp-latte.webp)
+
+</details>
 
 #### How to set it up
 1. Copy your desired flavour config from [integrations/catppuccin](integrations/catppuccin) into the [includes](includes) folder
