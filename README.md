@@ -55,6 +55,18 @@ If you want to use Cascade with the Browsers default colours, or custom Firefox 
 
 <br>
 
+### Mouse Support
+
+Cascade offers an [alternative config file](chrome/includes/cascade-config-mouse.css) that reintroduces some of the UI elements that are necessary to use Firefox with a mouse. To use these settings simply substitue the regular config include with the one for mouse support.
+
+This config brings back:
+* Navigation Buttons
+* the URL Bar Bookmark Button
+* the Hamburger Menu
+* Tab Close Buttons (on hover)
+
+<br>
+
 ### Sort the UI like you want it
 
 In the [Cascade config](chrome/includes/cascade-config.css) you can set different ways of how the UI elements are layed out. The URL Bar, Tab Bar and Personal Toolbar can be arranged in different stacks; do you want the Toolbar to be on top or the URL and Tab Bar? Tabs on the left with the URL Bar to the right? No problem!
