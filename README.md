@@ -38,7 +38,9 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
   - MacOS: `Users/[USERNAME]/Library/Application Support/Firefox/Profiles/######.default-release`
   - Windows: `C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release`
 4. Copy the `chrome` folder into your profile.
-5. *optional* Customise everything to your liking.
+5. Customise everything to your liking. (*optional*)
+
+> **Note** If you're using Cascade I highly recommend to remove all clutter from the Navigation Bar area. To do so rightclick your bar and go into the customisation settings. You can move all the icons freely which allows you to place your Addons within the Personal Toolbar for example.
 
 <br><br>
 
