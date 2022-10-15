@@ -44,7 +44,44 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 
 ## Customise Cascade to your liking
 
-**soon™**
+<br>
+
+### Colours
+
+By default Cascade loads it's own colours which can be customised to fit your desired by simply changing the [colours include](chrome/includes/cascade-colours.css).
+If you want to use Cascade with the Browsers default colours, or custom Firefox Themes like [Firefox Color](https://color.firefox.com) or even Addons like [Adaptive Tab Bar Color](https://github.com/YS-Wong/Adaptive-Tab-Bar-Color) simply remove the [colours include](chrome/includes/cascade-colours.css) from the [userChrome.css](chrome/userChrome.css) file.
+
+<br>
+
+### URL Bar Customisation
+
+You can freely set your desired URL Bar width from within the [config](chrome/includes/cascade-config.css) where the `min-width` setting is the default URL Bar width and `max-width` is the width of the focused URL Bar. Those can be different in order to make more room for the URL Bar when you actually want to use it.
+
+```css
+/*  Width of the URL Bar for the Oneline layout
+ *  If enabled the max-width is applied on focus
+ *  otherwise the URL Bar will always be it's min-width
+ */ --uc-urlbar-min-width: 30vw;
+    --uc-urlbar-max-width: 45vw;
+```
+
+If you set the `min-width` to `0vw` and the `max-width` to `100vw` you can also completely hide the URL Bar as long as it's not focused.
+
+![Fully hidden URL Bar if unfocused](assets/cascade-urlbar.webp)
+
+<br>
+
+### Oneline Breakpoint
+
+If you'd like to have Cascade transition into it's online layout on either smaller or larger sizes you can simply do so by changing the breakpoint value in the [responsive include](chrome/includes/cascade-responsive.css) file. If you don't want Cascade to break to the Oneline layout at all remove it from the [userChrome.css](chrome/userChrome.css) file
+
+```css
+@media (min-width: 1000px) {
+
+  […]
+
+}
+```
 
 <br><br>
 
