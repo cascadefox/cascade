@@ -1,0 +1,101 @@
+:root {
+
+  /* These colours are (mainly) used by the
+     Container Tabs Plugin */
+     --uc-identity-colour-blue:      #7ED6DF;
+     --uc-identity-colour-turquoise: #55E6C1;
+     --uc-identity-colour-green:     #B8E994;
+     --uc-identity-colour-yellow:    #F7D794;
+     --uc-identity-colour-orange:    #F19066;
+     --uc-identity-colour-red:       #FC5C65;
+     --uc-identity-colour-pink:      #F78FB3;
+     --uc-identity-colour-purple:    #786FA6;
+
+     /*  Cascades main Colour Scheme */
+     --uc-base-colour:               #1E2021;
+     --uc-highlight-colour:          #191B1C;
+     --uc-inverted-colour:           #FAFAFC;
+     --uc-muted-colour:              #AAAAAC;
+     --uc-accent-colour:             var(--uc-identity-colour-purple);
+
+}
+
+
+#topmenu { display: none !important; }
+
+
+#tablist-wrapper,
+#pinnedtablist { background: var(--uc-base-colour); }
+
+.tab:hover,
+.tab.active { background: var(--uc-highlight-colour); }
+
+
+
+#tablist-wrapper .tab-title-wrapper {
+
+  opacity: 0;
+  transform: translateX(-10px);
+
+  transition: all 200ms ease;
+  transition-delay: 0ms;
+
+}
+
+
+body:hover #tablist-wrapper .tab-title-wrapper {
+
+  opacity: 1;
+  transform: translateX(0);
+
+  transition-delay: 50ms;
+
+}
+
+
+
+.tab,
+.tab.active { border-bottom: none !important; }
+
+
+
+#pinnedtablist:not(.compact) .tab { padding: 6px; }
+#tablist .tab { padding: 0 0 0 6px; }
+
+
+
+.tab { overflow: visible; }
+
+
+
+#pinnedtablist:not(.compact) .tab[data-identity-color] .tab-context::before,
+#tablist .tab[data-identity-color] .tab-context::before {
+
+  position: absolute;
+  top: 4px; bottom: 4px;
+
+  width: 2px;
+
+  background: var(--identity-color);
+
+  content: '';
+
+}
+
+#tablist .tab[data-identity-color] .tab-context::before { left: -3px; }
+
+
+#pinnedtablist:not(.compact) .tab .tab-pin,
+.tab-close,
+.tab-loading-burst { display: none; }
+
+#pinnedtablist:not(.compact) .tab[data-identity-color] .tab-context { box-shadow: none !important; }
+
+[data-identity-color="blue"]      { --identity-color: var(--uc-identity-colour-blue); }
+[data-identity-color="turquoise"] { --identity-color: var(--uc-identity-colour-turquoise); }
+[data-identity-color="green"]     { --identity-color: var(--uc-identity-colour-green); }
+[data-identity-color="yellow"]    { --identity-color: var(--uc-identity-colour-yellow); }
+[data-identity-color="orange"]    { --identity-color: var(--uc-identity-colour-orange); }
+[data-identity-color="red"]       { --identity-color: var(--uc-identity-colour-red); }
+[data-identity-color="pink"]      { --identity-color: var(--uc-identity-colour-pink); }
+[data-identity-color="purple"]    { --identity-color: var(--uc-identity-colour-purple); }
