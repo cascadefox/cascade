@@ -15,7 +15,7 @@ This theme was known previously as »*ag.proton*« — but let's be honest: That
 [![Issues](https://img.shields.io/github/issues/andreasgrafen/cascade?style=for-the-badge&color=FC5C65&labelColor=1E2021)](https://github.com/andreasgrafen/cascade/issues)
 [![Discord](https://img.shields.io/discord/837559961194070026?label=FFCSS+Discord&style=for-the-badge&color=786FA6&labelColor=1E2021)](https://discord.gg/jrrw7Eg6sj)
 
-<br><br>
+<br><br><br>
 
 ![Cascade Preview](assets/preview.webp)
 
@@ -27,7 +27,7 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 
 </div>
 
-<br><br>
+<br><br><br>
 
 ## How to use a userChrome.css theme
 
@@ -42,7 +42,7 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 
 > **Note** If you're using Cascade I highly recommend to remove all clutter from the Navigation Bar area. To do so rightclick your bar and go into the customisation settings. You can move all the icons freely which allows you to place your Addons within the Personal Toolbar for example.
 
-<br><br>
+<br><br><br>
 
 ## Customise Cascade to your liking
 
@@ -114,7 +114,7 @@ If you'd like to have Cascade transition into it's online layout on either small
 }
 ```
 
-<br><br>
+<br><br><br>
 
 ## Integrations
 
@@ -127,7 +127,7 @@ If you'd like to have Cascade transition into it's online layout on either small
 2. Copy the contents of [integrations/tabcenter-reborn.css](integrations/tabcenter-reborn.css) into the Addons settings
 3. Import the [includes/cascade-tcr.css](chrome/includes/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
 
-<br><br>
+<br><br><br>
 
 ## Keyboard Shortcuts
 
