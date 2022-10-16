@@ -1,0 +1,6 @@
+@media (min-width: 1000px) {
+
+  #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 10px) calc(100vw - var(--uc-urlbar-min-width)) 0 0 !important; }
+  #titlebar { margin-inline-start: var(--uc-urlbar-min-width) !important; }
+
+}

@@ -40,11 +40,14 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 4. Copy the `chrome` folder into your profile.
 5. Customise everything to your liking. (*optional*)
 
-> **Note** If you're using Cascade I highly recommend to remove all clutter from the Navigation Bar area. To do so rightclick your bar and go into the customisation settings. You can move all the icons freely which allows you to place your Addons within the Personal Toolbar for example.
+> **Note** **⚠️ Attention Windows users**.<br>
+It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. In order to fix the One-Line layout on windows please substitute the [responsive include](chrome/includes/cascade-responsive.css) with the [version for windows](chrome/includes/cascade-responsive-windows-fix.css). This will ensure that the layout doesn't break **but** since it can't use `flexbox` the UI reordering does **not** work.
 
 <br><br><br>
 
 ## Customise Cascade to your liking
+
+> **Note** If you're using Cascade I highly recommend to remove all clutter from the Navigation Bar area. To do so rightclick your bar and go into the customisation settings. You can move all the icons freely which allows you to place your Addons within the Personal Toolbar for example.
 
 <br>
 
