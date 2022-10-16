@@ -41,7 +41,7 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 5. Customise everything to your liking. (*optional*)
 
 > **Note** **⚠️ Attention Windows users**.<br>
-It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. In order to fix the One-Line layout on windows please substitute the [responsive include](chrome/includes/cascade-responsive.css) with the [version for windows](chrome/includes/cascade-responsive-windows-fix.css). This will ensure that the layout doesn't break **but** since it can't use `flexbox` the UI reordering does **not** work.
+It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. In order to fix the One-Line layout on windows please substitute the [responsive include](chrome/includes/cascade-responsive.css) with the [version for windows](chrome/includes/cascade-responsive-windows-fix.css). This will ensure that the layout doesn't break **but** since it can't use `flexbox` the UI reordering does **not** work.<br>
 
 <br><br><br>
 
@@ -55,6 +55,9 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 
 By default Cascade loads it's own colours which can be customised to fit your desired by simply changing the [colours include](chrome/includes/cascade-colours.css).
 If you want to use Cascade with the Browsers default colours, or custom Firefox Themes like [Firefox Color](https://color.firefox.com) or even Addons like [Adaptive Tab Bar Color](https://github.com/YS-Wong/Adaptive-Tab-Bar-Color) simply remove the [colours include](chrome/includes/cascade-colours.css) from the [userChrome.css](chrome/userChrome.css) file.
+
+> **Note** **Are you having issues with the colours not applying?**<br>
+A workaround fix for this issue is to remove the colour include from the [main file](chrome/userChrome.css) and use [Firefox Color](https://addons.mozilla.org/en-GB/firefox/addon/firefox-color/) to apply [this custom theme](https://color.firefox.com/?theme=XQAAAAL8AAAAAAAAAABBKYhm849SCia2CaaEGccwS-xMDPr15o6H0LddKi1zZz7p7H23MOXwiWJCP8Eczt9O0cwm8bbmvpd20uiOFG8WawCZcXzraYdfXj2HrWgd4IgJK7QchIStW1KXpQGYxo9DHahUGJEmoKprdWRKoHPzcBH145YsTnnZq5DK71QEUg2RSwksm6Vs6Y7i7Y-4K-wFjfvAbb__jUJAAA) to apply Cascades default colours.
 
 <br>
 
