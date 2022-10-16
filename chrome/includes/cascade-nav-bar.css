@@ -12,7 +12,7 @@
 #urlbar,
 #urlbar * {
 
-  padding-block-start: 1px !important;
+  padding-block-start: var(--uc-urlbar-top-spacing) !important;
 
   outline: none !important;
   box-shadow: none !important;

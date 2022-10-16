@@ -75,6 +75,11 @@
    *  3 – tabs on the left
    */ --uc-urlbar-position: 1;
 
+  /*  Firefox can be a little wonky with the vertical
+   *  URL Bar placement. Change this variable to adapt
+   *  to this when necessary.
+   */ --uc-urlbar-top-spacing: 1px;
+
 }
 
 
