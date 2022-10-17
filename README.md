@@ -1,35 +1,53 @@
 <br><br>
-    
+
 # Cascade
 **A minimalistic and keyboard centered userChrome**
 
 Cascade aims to remove a lot of the subjective clutter default Firefox comes with. The theme is also highly inspired by the stylistic choices of [SimpleFox](https://github.com/migueravila/SimpleFox) 🦊 by [Miguel Ávila](https://github.com/migueravila).
 
-This theme was known previously as »*ag.proton*« — but let's be honest: That sounds hella boring. What you get is a really simple adaptive layout that works well with the new Proton UI. By default — on larger screen resolutions – Cascade will transition to a Oneline layout which displays the URL Bar and Tab Bar next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
-
-**[Installation](#how-to-use-a-userchromecss-theme) • [Customisation](#customise-cascade-to-your-liking) • [Keyboard Shortcuts](#keyboard-shortcuts)**
+**[Installation](#how-to-install-cascade) • [Customisation](#customise-cascade-to-your-liking) • [Integrations](#integrations) • [Keyboard Shortcuts](#keyboard-shortcuts)**
 
 <br>
+
+![Cascade Preview](assets/preview.webp)
+
+<br>
+
+This theme was known previously as »*ag.proton*« — but let's be honest: That sounds hella boring. What you get is a really simple adaptive layout that works well with the new Proton UI. By default — on larger screen resolutions – Cascade will transition to a Oneline layout which displays the URL Bar and Tab Bar next to each other. Smaller resultions will stack both UI elements on top of each other for better readability.
+
+<br><br><br>
+
+<div align="center">
 
 [![Stargazers](https://img.shields.io/github/stars/andreasgrafen/cascade?style=for-the-badge&color=F19066&labelColor=1E2021)](https://github.com/andreasgrafen/cascade/stargazers)
 [![Issues](https://img.shields.io/github/issues/andreasgrafen/cascade?style=for-the-badge&color=FC5C65&labelColor=1E2021)](https://github.com/andreasgrafen/cascade/issues)
 [![Discord](https://img.shields.io/discord/837559961194070026?label=FFCSS+Discord&style=for-the-badge&color=786FA6&labelColor=1E2021)](https://discord.gg/jrrw7Eg6sj)
 
-<br><br><br>
-
-![Cascade Preview](assets/preview.webp)
-
-<div align="center">
- 
 If you *really* like my work you can buy me a coffee to fuel further development.<br>
 While appreciated it's ofc by no means necessary. ♡<br><br>
 [![Buy me a Coffee <3](https://img.shields.io/static/v1?label=&message=Buy%20me%20a%20Coffee&style=for-the-badge&color=e6e9ef&labelColor=ccd0da&logo=kofi)](https://ko-fi.com/andreasgrafen)
 
 </div>
 
-<br><br><br>
+<br><br><hr><br>
 
-## How to use a userChrome.css theme
+<details><summary><h2>Table of Contents</h2></summary>
+
+- [Installation](#how-to-install-cascade)
+- [Customisation](#customise-cascade-to-your-liking)
+  - [Colours](#colours)
+  - [Mouse Support](#mouse-support)
+  - [Reorder the UI](#sort-the-ui-like-you-want-it)
+  - [URL Bar Customisation](#url-bar-customisation)
+  - [Custom Breakpoint](#oneline-breakpoint)
+- [Integrations](#integrations)
+  - [Vertical Tabs](#tab-center-reborn--vertical-tabs)
+  - [Catppuccin](#catppuccin)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+
+</details><br>
+
+## How to install Cascade
 
 1. Type `about:config` into your URL bar. Click on the **I accept the risk** button if you're shown a warning.
 2. Seach for **`toolkit.legacyUserProfileCustomizations.stylesheets`** and set it to **`true`**.
@@ -176,19 +194,19 @@ This simply offers premade colour configs for [Catppuccin](https://github.com/ca
 This userstyle was made for a keyboard centered usage, like Tilling Window Manager users or just cool people that loves them!
 These are **some** of the shortcuts that are available:
 
-Windows / Linux | MacOS | Description
---- | --- | ---
-`Ctrl + L` | `Command * L` | focuses the URL bar
-`Ctrl + B` | `Command + B` | shows you the bookmark sidebar
-`Ctrl + Shift + B` | `Command + Shift + B` | shows you the bookmark toolbar
-`Alt + Left Arrow` | `Command + Left Arrow` | navigates backwards in your history
-`Alt + Right Arrow` | `Command + Right Arrow` | navigates forwards in your history
-`Ctrl + T` | `Command + T` | opens a new tab
-`Ctrl + Shift + T` | `Command + Shift + T` | reopens the last closed tab
-`Ctrl + W` | `Command + W` | closes the current tab
-`Ctrl + Page Up`<br/>or `Ctrl + Shift + Tab` | `Command + Option + Left Arrow` | navigates to the previous tab
-`Ctrl + Page Down`<br/>or `Ctrl + Tab` | `Command + Option + Right Arrow` | navigates to the next tab
+| Windows / Linux                              | MacOS                            | Description                         |
+| -------------------------------------------- | -------------------------------- | ----------------------------------- |
+| `Ctrl + L`                                   | `Command + L`                    | focuses the URL bar                 |
+| `Ctrl + B`                                   | `Command + B`                    | toggles the bookmark sidebar        |
+| `Ctrl + Shift + B`                           | `Command + Shift + B`            | toggles the personal toolbar        |
+| `Alt + Left Arrow`                           | `Command + Left Arrow`           | navigates backwards in your history |
+| `Alt + Right Arrow`                          | `Command + Right Arrow`          | navigates forwards in your history  |
+| `Ctrl + T`                                   | `Command + T`                    | opens a new tab                     |
+| `Ctrl + Shift + T`                           | `Command + Shift + T`            | reopens the last closed tab         |
+| `Ctrl + W`                                   | `Command + W`                    | closes the current tab              |
+| `Ctrl + Page Up`<br/>or `Ctrl + Shift + Tab` | `Command + Option + Left Arrow`  | navigates to the previous tab       |
+| `Ctrl + Page Down`<br/>or `Ctrl + Tab`       | `Command + Option + Right Arrow` | navigates to the next tab           |
 
-For the full list of shortcuts visit [the official Firefox website](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly).‎
+For the full list of shortcuts visit [the official Firefox website](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly).
 
 <br><br>
