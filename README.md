@@ -160,8 +160,8 @@ If you'd like to have Cascade transition into it's online layout on either small
 
 #### How to set it up
 1. Download the [Tab Center Reborn Addon](https://addons.mozilla.org/en-GB/firefox/addon/tabcenter-reborn/)
-2. Copy the contents of [integrations/tabcenter-reborn.css](integrations/tabcenter-reborn.css) into the Addons settings
-3. Import the [includes/cascade-tcr.css](chrome/includes/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
+2. Copy the contents of [integrations/tabcenter-reborn/tabcenter-reborn.css](integrations/tabcenter-reborn/tabcenter-reborn.css) into the Addons settings
+3. Import the [integrations/tabcenter-reborn/cascade-tcr.css](integrations/tabcenter-reborn/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
 
 <br>
 
