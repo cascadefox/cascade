@@ -41,8 +41,8 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
   - [URL Bar Customisation](#url-bar-customisation)
   - [Custom Breakpoint](#oneline-breakpoint)
 - [Integrations](#integrations)
-  - [Vertical Tabs](#tab-center-reborn--vertical-tabs)
   - [Catppuccin](#catppuccin)
+  - [Vertical Tabs](#tab-center-reborn--vertical-tabs)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 
 </details><br>
@@ -154,17 +154,6 @@ If you'd like to have Cascade transition into it's online layout on either small
 
 ## Integrations
 
-### Tab Center Reborn — Vertical Tabs
-
-![Tab Center Reborn Vertical Tabs Preview](assets/cascade-tcr.webp)
-
-#### How to set it up
-1. Download the [Tab Center Reborn Addon](https://addons.mozilla.org/en-GB/firefox/addon/tabcenter-reborn/)
-2. Copy the contents of [integrations/tabcenter-reborn/tabcenter-reborn.css](integrations/tabcenter-reborn/tabcenter-reborn.css) into the Addons settings
-3. Import the [integrations/tabcenter-reborn/cascade-tcr.css](integrations/tabcenter-reborn/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
-
-<br>
-
 ### Catppuccin
 
 ![Cascade Catppuccin Preview](assets/cascade-ctp.webp)
@@ -186,6 +175,19 @@ This simply offers premade colour configs for [Catppuccin](https://github.com/ca
 2. Replace the colour include in the [userChrome.css](chrome/userChrome.css) with your desired flavour file
 
 > Alternatively you can also just copy the contents of your desired flavour config into the colour config file.
+
+<br>
+
+### Tab Center Reborn — Vertical Tabs
+
+![Tab Center Reborn Vertical Tabs Preview](assets/cascade-tcr.webp)
+
+#### How to set it up
+1. Download the [Tab Center Reborn Addon](https://addons.mozilla.org/en-GB/firefox/addon/tabcenter-reborn/)
+2. Copy the contents of [integrations/tabcenter-reborn/tabcenter-reborn.css](integrations/tabcenter-reborn/tabcenter-reborn.css) into the Addons settings
+3. Import the [integrations/tabcenter-reborn/cascade-tcr.css](integrations/tabcenter-reborn/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
+
+<br>
 
 <br><br><br>
 
