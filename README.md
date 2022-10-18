@@ -43,6 +43,7 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 - [Integrations](#integrations)
   - [Catppuccin](#catppuccin)
   - [Vertical Tabs](#tab-center-reborn--vertical-tabs)
+  - [Side View](#side-view)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 
 </details><br>
@@ -188,6 +189,14 @@ This simply offers premade colour configs for [Catppuccin](https://github.com/ca
 3. Import the [integrations/tabcenter-reborn/cascade-tcr.css](integrations/tabcenter-reborn/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
 
 <br>
+
+### Side View
+
+[Mozilla's Side View](https://addons.mozilla.org/en-GB/firefox/addon/side-view/) is an Addon that allows you to open a second Website within the Sidebar of your Browser. Cascades integration gets rid of the header, moves the »*Close*«-Button to the bottom, and allows the sidebar to be up to 50% of your browsers width.
+
+#### How to set it up
+1. Download the [Side View Addon](https://addons.mozilla.org/en-GB/firefox/addon/side-view/)
+2. Import the [integrations/side-view/cascade-sideview.css](integrations/side-view/cascade-sideview.css) into the [userChrome.css](chrome/userChrome.css)
 
 <br><br><br>
 
