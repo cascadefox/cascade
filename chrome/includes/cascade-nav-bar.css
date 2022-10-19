@@ -26,7 +26,7 @@
 #urlbar[focused='true']
   > #urlbar-background,
 #urlbar:not([open])
-  > #urlbar-background { background: transparent !important; }
+  > #urlbar-background { background: var(--toolbar-field-background-color) !important; }
 
 
 #urlbar[open]
@@ -36,4 +36,4 @@
 .urlbarView-row:hover
   > .urlbarView-row-inner,
 .urlbarView-row[selected]
-  > .urlbarView-row-inner { background: var(--toolbar-bgcolor) !important; }
+  > .urlbarView-row-inner { background: var(--toolbar-field-focus-background-color) !important; }
