@@ -24,12 +24,7 @@
 #PersonalToolbar,
 #navigator-toolbox,
 #sidebar-box,
-#nav-bar {
-
-  -moz-appearance: none !important;
-  border: none !important;
-
-}
+#nav-bar { border: none !important; }
 
 
 /* remove "padding" left and right from tabs */
