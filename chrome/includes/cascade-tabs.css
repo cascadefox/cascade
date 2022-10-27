@@ -4,7 +4,8 @@
   > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
 
 
-
+/* Hides the list-all-tabs button*/
+#alltabs-button { display:none !important; }
 
 
 /* remove tab shadow */
