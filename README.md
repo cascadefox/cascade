@@ -141,7 +141,7 @@ If you set the `min-width` to `0vw` and the `max-width` to `100vw` you can also 
 
 ### Oneline Breakpoint
 
-If you'd like to have Cascade transition into it's online layout on either smaller or larger sizes you can simply do so by changing the breakpoint value in the [responsive include](chrome/includes/cascade-responsive.css) file. If you don't want Cascade to break to the Oneline layout at all remove it from the [userChrome.css](chrome/userChrome.css) file
+If you'd like to have Cascade transition into it's Oneline layout on either smaller or larger sizes you can simply do so by changing the breakpoint value in the [responsive include](chrome/includes/cascade-responsive.css) file. If you don't want Cascade to break to the Oneline layout at all remove it from the [userChrome.css](chrome/userChrome.css) file
 
 ```css
 @media (min-width: 1000px) {
