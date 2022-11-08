@@ -131,6 +131,12 @@
    *  hide: none
    */ --show-tab-close-button-hover: none;
 
+  /*  Hide the all Tabs button from the Tab Bar
+   *  possible values:
+   *  show: -moz-box
+   *  hide: none
+   */ --uc-show-all-tabs-button: none;
+
 
   /*  Left and Right "dip" of the container indicator
    *  0px equals tab width
