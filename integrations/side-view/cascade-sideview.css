@@ -1,10 +1,4 @@
-#sidebar-box[sidebarcommand*="side-view"] {
-
-  display: flex !important; flex-direction: column-reverse !important;
-
-  max-width: 50vw !important;
-
-}
+#sidebar-box[sidebarcommand*="side-view"] { max-width: 50vw !important; }
 
 [sidebarcommand*="side-view"] #sidebar { width: 100% !important; max-width: 50vw !important; height: 100% !important; }
 
