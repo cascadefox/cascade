@@ -14,7 +14,7 @@
   top: 0; bottom: 0;
   z-index: 1;
 
-  min-width: 50px; max-width: 50px;
+  min-width: 50px !important; max-width: 50px !important;
 
   border-right: none;
 
@@ -31,3 +31,7 @@
 
 #sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) ~ #appcontent { margin-left: 50px; }
 #main-window[inFullscreen][inDOMFullscreen] #appcontent { margin-left: 0; }
+/* Removes gap between active tab highlight and edge of bar */
+#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] #sidebar-header, #sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] ~ #sidebar-splitter {
+    display: none;
+}
