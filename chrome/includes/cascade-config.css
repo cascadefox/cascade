@@ -37,21 +37,24 @@
  +---+---+---+---+---+---+---*/
 
 
+/*  Position of the Personal Toolbar
+ *  possible values:
+ *  0 – toolbar on top
+ *  4 – toolbar on bottom
+ */
 :root {
-
-  /*  Position of the Personal Toolbar
-   *  possible values:
-   *  0 – toolbar on top
-   *  4 – toolbar on bottom
-   */ --uc-toolbar-position: 0;
-
-  /*  Darken the Personal Toolbar by X amount
-   *  where X = 1 means pure black
-   *  and X = 0 means no darkening at all
-   */ --uc-darken-toolbar: .2;
-
+  --uc-toolbar-position: 0;
 }
 
+/*  Darken the Personal Toolbar by X amount
+ *  where X = 1 means pure black
+ *  and X = 0 means no darkening at all
+ */
+@media (prefers-color-scheme: dark) { :root {
+  --uc-darken-toolbar: 0.2;
+}} @media (prefers-color-scheme: light) { :root {
+  --uc-darken-toolbar: 0;
+}}
 
 
 
