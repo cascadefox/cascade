@@ -69,8 +69,8 @@
   /*  Width of the URL Bar for the Oneline layout
    *  If enabled the max-width is applied on focus
    *  otherwise the URL Bar will always be it's min-width
-   */ --uc-urlbar-min-width: 35vw;
-      --uc-urlbar-max-width: 35vw;
+   */ --uc-urlbar-min-width: 20vw;
+      --uc-urlbar-max-width: 40vw;
 
   /*  Position of the URL Bar
    *  possible values:
@@ -104,6 +104,9 @@
 
 /* Hide the »Go«-arrow in the URL Bar */
 #urlbar-go-button { display: none !important; }
+
+/* Hides the Extensions Menu Icon */
+#unified-extensions-button { display: none !important; }
 
 
 
