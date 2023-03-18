@@ -30,6 +30,14 @@
 /* remove "padding" left and right from tabs */
 .titlebar-spacer { display: none !important; }
 
+/* fix Shield Icon padding */
+#urlbar-input-container[pageproxystate="valid"]
+  > #tracking-protection-icon-container
+  > #tracking-protection-icon-box
+  > #tracking-protection-icon {
+    padding-bottom: 1px;
+}
+
 
 
 
