@@ -10,6 +10,8 @@
     width: var(--uc-urlbar-min-width);
 
   }
+  
+  #nav-bar #urlbar-container { min-width: 0px !important; }
 
 
   #titlebar {
