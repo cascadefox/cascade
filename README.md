@@ -56,8 +56,12 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
   - Linux: `$HOME/.mozilla/firefox/######.default-release/`
   - MacOS: `Users/[USERNAME]/Library/Application Support/Firefox/Profiles/######.default-release`
   - Windows: `C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release`
-4. Copy the `chrome` folder into your profile.
+4. Copy the `chrome` folder into your profile and restart<sup>1)</sup> Firefox.
 5. Customise everything to your liking. (*optional*)
+
+<sup>1) If you're running into trouble with a restart seemingly not working you can navigate to `about:profiles` and click the »*Restart Normally*«-Button.</sup>
+
+<br>
 
 > **Note** **⚠️ Attention Windows users**.<br>
 It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. In order to fix the One-Line layout on windows please substitute the [responsive include](chrome/includes/cascade-responsive.css) with the [version for windows](chrome/includes/cascade-responsive-windows-fix.css). This will ensure that the layout doesn't break **but** since it can't use `flexbox` the UI reordering does **not** work.<br>
