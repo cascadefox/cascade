@@ -94,6 +94,8 @@ This config brings back:
 * the Hamburger Menu
 * Tab Close Buttons (on hover)
 
+If the buttons inside the URL Bar are off you may need to change the `--uc-page-action-margin` variable in the config as the necessary margin seems to differ depending on ones setup.
+
 <br>
 
 ### Sort the UI like you want it
