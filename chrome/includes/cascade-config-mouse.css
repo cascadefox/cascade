@@ -15,6 +15,11 @@
    *  0 places directly in the corner
    */ --uc-status-panel-spacing: 12px;
 
+  /*  Top margin for the Page Action Buttons
+   *  inside the URL Bar. This might need
+   *  customisation depending on yout setup!
+   */ --uc-page-action-margin: 7px;
+
 }
 
 
@@ -92,7 +97,7 @@
 
 /* Hide everything BUT the zoom indicator within the URL Bar */
 #page-action-buttons > :not(#urlbar-zoom-button):not(#star-button-box) { display: none !important; }
-.urlbar-page-action > image { margin-top: 7px !important; }
+.urlbar-page-action > image { margin-top: var(--uc-page-action-margin) !important; }
 
 /* Hide Container Tab labels inside the URL bar */
 #userContext-icons { display: none !important; }
