@@ -17,6 +17,7 @@
      --uc-inverted-colour:           #FAFAFC;
      --uc-muted-colour:              #AAAAAC;
      --uc-accent-colour:             var(--uc-identity-colour-purple);
+     --uc-shadow-colour:             #000000;
 
 }
 
@@ -99,3 +100,8 @@ body:hover #tablist-wrapper .tab-title-wrapper {
 [data-identity-color="red"]       { --identity-color: var(--uc-identity-colour-red); }
 [data-identity-color="pink"]      { --identity-color: var(--uc-identity-colour-pink); }
 [data-identity-color="purple"]    { --identity-color: var(--uc-identity-colour-purple); }
+
+.can-scroll-top #tablist { mask: linear-gradient(transparent, var(--uc-shadow-colour) 40px); }
+.can-scroll-bottom #tablist { mask: linear-gradient(var(--uc-shadow-colour) calc(100% - 40px), transparent); }
+.can-scroll-bottom.can-scroll-top #tablist { mask: linear-gradient(transparent, var(--uc-shadow-colour) 40px calc(100% - 40px), transparent); }
+#topshadow, #bottomshadow { display: none; }
