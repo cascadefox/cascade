@@ -42,6 +42,7 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
   - [Custom Breakpoint](#oneline-breakpoint)
 - [Integrations](#integrations)
   - [Catppuccin](#catppuccin)
+  - [Rosé Pine](#rosé-pine)
   - [Vertical Tabs](#tab-center-reborn--vertical-tabs)
   - [Side View](#side-view)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
@@ -177,8 +178,18 @@ This simply offers premade colour configs for [Catppuccin](https://github.com/ca
 
 </details>
 
+<br>
+
+### Rosé Pine
+
+![Cascade Rosé Pine Preview](assets/cascade-rosepine.webp)
+
+Similar to Catppuccin these are premade colour configs for [Rosé Pine](https://github.com/rose-pine/rose-pine-theme). Featuring the [Default Palette](integrations/rose-pine/cascade-rose-pine.css) as well as [Moon](integrations/rose-pine/cascade-moon.css) with Dawn as light mode for both.
+
+<br>
+
 #### How to set it up
-1. Copy your desired flavour config from [integrations/catppuccin](integrations/catppuccin) into the [includes](includes) folder
+1. Copy your desired colour config from [integrations/catppuccin](integrations/catppuccin) or [integrations/rose-pine](integrations/rose-pine) into the [includes](includes) folder
 2. Replace the colour include in the [userChrome.css](chrome/userChrome.css) with your desired flavour file
 
 > Alternatively you can also just copy the contents of your desired flavour config into the colour config file.
