@@ -39,18 +39,6 @@
   > .urlbarView-row-inner { background: var(--toolbar-field-focus-background-color) !important; }
 
 
-.urlbar-icon, #urlbar-go-button {
-  
-  margin: auto;
+.urlbar-icon, #urlbar-go-button { margin: auto; }
 
-}
-
-
-.urlbar-page-action {
-
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-
-}
-
-
+.urlbar-page-action { padding: 0 inherit !important; }
