@@ -100,15 +100,7 @@ body:hover #tablist-wrapper .tab-title-wrapper {
 [data-identity-color="pink"]      { --identity-color: var(--uc-identity-colour-pink); }
 [data-identity-color="purple"]    { --identity-color: var(--uc-identity-colour-purple); }
 
-.can-scroll-top #tablist {
-    mask: linear-gradient(transparent, black 40px);
-}
-.can-scroll-bottom #tablist {
-    mask: linear-gradient(black calc(100% - 40px), transparent);
-}
-.can-scroll-bottom.can-scroll-top #tablist {
-    mask: linear-gradient(transparent, black 40px calc(100% - 40px), transparent);
-}
-#topshadow, #bottomshadow {
-    display: none;
-}
+.can-scroll-top #tablist { mask: linear-gradient(transparent, black 40px); }
+.can-scroll-bottom #tablist { mask: linear-gradient(black calc(100% - 40px), transparent); }
+.can-scroll-bottom.can-scroll-top #tablist { mask: linear-gradient(transparent, black 40px calc(100% - 40px), transparent); }
+#topshadow, #bottomshadow { display: none; }
