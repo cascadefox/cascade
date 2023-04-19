@@ -1,10 +1,14 @@
 #!/bin/sh
-DEFAULT_FIREFOX_PROFILE=$(ls $HOME/.mozilla/firefox/ | grep default | awk -F' ' '{print $NF}')
+DEFAULT_FIREFOX_PROFILE=$(grep 'Path=' "$firefox_profiles_dir/profiles.ini" | cut -d= -f2)
 rm $HOME/.mozilla/firefox/$DEFAULT_FIREFOX_PROFILE/chrome -rf
 cd $HOME/.mozilla/firefox/$DEFAULT_FIREFOX_PROFILE
 git clone https://github.com/iruzo/cascade && mv cascade/chrome .
-mv cascade/integrations/catppuccin/cascade-mocha.css chrome/includes/cascade-colours.css
-rm cascade -rf
+
+# configure desired theme
+if [ "$#" -gt 0 ]; then
+  mv cascade/integrations/cascade-$1.css chrome/includes/cascade-colours.css
+  rm cascade -rf
+fi
 
 # change toolkit.legacyUserProfileCustomizations.stylesheets
 if [ ! -e "$HOME/.mozilla/firefox/$DEFAULT_FIREFOX_PROFILE/prefs.js" ]; then

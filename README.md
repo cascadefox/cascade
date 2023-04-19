@@ -27,32 +27,16 @@ This theme was known previously as »*ag.proton*« — but let's be honest: That
 
   - Default
   ```sh
-  sh <(curl https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer/default.sh)
+  sh -c "$(curl -sSL https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer.sh)"
   ```
-  - gruvbox
+
+  - Selecting a theme
   ```sh
-  sh <(curl https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer/gruvbox.sh)
+  sh -c "$(curl -sSL https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer.sh) gruvbox"
   ```
-  - rosepine-default
-  ```sh
-  sh <(curl https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer/rosepine-default.sh)
-  ```
-  - rosepine-moon
-  ```sh
-  sh <(curl https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer/rosepine-moon.sh)
-  ```
-  - catppuccin-frappe
-  ```sh
-  sh <(curl https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer/catppuccin-frappe.sh)
-  ```
-  - catppuccin-macchiato
-  ```sh
-  sh <(curl https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer/catppuccin-macchiato.sh)
-  ```
-  - catppuccin-mocha
-  ```sh
-  sh <(curl https://raw.githubusercontent.com/andreasgrafen/cascade/main/installer/catppuccin-mocha.sh)
-  ```
+
+  > **Note** You can select from multiple themes like catppuccin, rose pine, or gruvbox. Themes are available in "integrations/". Replace in the previous example "gruvbox" with your desired theme.
+
   > **Note** On NixOS, you can modify `toolkit.legacyUserProfileCustomizations.stylesheets` by setting `"DisableProfileCustomizations": true` on your `policies` config, or execute one of the installer scripts using `post-build-hook = installer.sh`
 
   > **Note** You can configure it manually following the MacOS and Windows steps with the next path for Linux `$HOME/.mozilla/firefox/######.default-release/`
@@ -87,7 +71,7 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 <details>
   <summary>Theming</summary>
 
-  Set your theme: You can change between multiple themes by replacing the content in `chrome/includes/cascade-colours.css` with one of the themes in `integrations/theme/theme.css`
+  Set your theme: You can change between multiple themes by replacing the content in `chrome/includes/cascade-colours.css` with one of the themes in `integrations/theme.css`
 
   This are the themes available:
 
