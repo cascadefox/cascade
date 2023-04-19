@@ -20,28 +20,10 @@ This theme was known previously as »*ag.proton*« — but let's be honest: That
 
 </div>
 
-## Previews
-
-<details>
-  <summary>:purple_square: Rosé Pine</summary>
-  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-rosepine.webp"/>
-</details>
-<details>
-  <summary>:purple_circle: Catppuccin</summary>
-  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp.webp"/>
-  <details>
-    <summary>Flavors</summary>
-    <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-latte.webp"/>
-    <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-frappe.webp"/>
-    <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-macchiato.webp"/>
-    <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-mocha.webp"/>
-  </details>
-</details>
-
 ## Usage
 
 <details>
-  <summary>:penguin: Linux</summary>
+  <summary>Linux</summary>
 
   - Default
   ```sh
@@ -77,7 +59,7 @@ This theme was known previously as »*ag.proton*« — but let's be honest: That
 </details>
 
 <details>
-  <summary>:green_apple: MacOS & :window: Windows</summary>
+  <summary>MacOS & Windows</summary>
 
   - Type `about:config` into your URL bar. Click on the **I accept the risk** button if you're shown a warning.
   - Seach for **`toolkit.legacyUserProfileCustomizations.stylesheets`** and set it to **`true`**.
@@ -87,8 +69,7 @@ This theme was known previously as »*ag.proton*« — but let's be honest: That
   - Copy the `chrome` folder into your profile and restart<sup>1)</sup> Firefox.
 </details>
 
-- Set your theme: You can change between multiple themes by replacing the content in `chrome/includes/cascade-colours.css` with one of the themes in `integrations/theme/theme.css`
-- [Continue customizing as much as you want :heart:](#customization)
+- [Continue customizing as much as you want](#customization)
 
 > **Note** If you're using Cascade I highly recommend to remove all clutter from the Navigation Bar area. To do so rightclick your bar and go into the customization settings. You can move all the icons freely which allows you to place your Addons within the Personal Toolbar for example.
 
@@ -104,7 +85,29 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 ## Customization
 
 <details>
-  <summary>:computer_mouse: Mouse support</summary>
+  <summary>Theming</summary>
+
+  Set your theme: You can change between multiple themes by replacing the content in `chrome/includes/cascade-colours.css` with one of the themes in `integrations/theme/theme.css`
+
+  This are the themes available:
+
+  Rosé Pine
+  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-rosepine.webp"/>
+  Catppuccin
+  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp.webp"/>
+  Catppuccin Latte
+  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-latte.webp"/>
+  Catppuccin Frappe
+  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-frappe.webp"/>
+  Catppuccin Macchiato
+  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-macchiato.webp"/>
+  Catppuccin Mocha
+  <img src="https://raw.githubusercontent.com/andreasgrafen/cascade/main/assets/cascade-ctp-mocha.webp"/>
+</details>
+
+<details>
+  <summary>Mouse support</summary>
+
   Cascade offers an [alternative config file](chrome/includes/cascade-config-mouse.css) that reintroduces some of the UI elements that are necessary to use Firefox with a mouse. To use these settings simply substitue the regular config include with the one for mouse support.
 
   This config brings back:
@@ -117,7 +120,8 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 </details>
 
 <details>
-  <summary>:computer: Sort the UI</summary>
+  <summary>Sort the UI</summary>
+
   In the [Cascade config](chrome/includes/cascade-config.css) you can set different ways of how the UI elements are layed out. The URL Bar, Tab Bar and Personal Toolbar can be arranged in different stacks; do you want the Toolbar to be on top or the URL and Tab Bar? Tabs on the left with the URL Bar to the right? No problem!
 
   ```css
@@ -142,7 +146,8 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 </details>
 
 <details>
-  <summary>:globe_with_meridians: URL bar customization</summary>
+  <summary>URL bar customization</summary>
+
   You can freely set your desired URL Bar width from within the [config](chrome/includes/cascade-config.css) where the `min-width` setting is the default URL Bar width and `max-width` is the width of the focused URL Bar. Those can be different in order to make more room for the URL Bar when you actually want to use it.
 
   ```css
@@ -160,7 +165,8 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 </details>
 
 <details>
-  <summary>:red_circle: Online breakpoint</summary>
+  <summary>Online breakpoint</summary>
+
   If you'd like to have Cascade transition into it's Oneline layout on either smaller or larger sizes you can simply do so by changing the breakpoint value in the [responsive include](chrome/includes/cascade-responsive.css) file. If you don't want Cascade to break to the Oneline layout at all remove it from the [userChrome.css](chrome/userChrome.css) file
 
   ```css
@@ -173,7 +179,8 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 </details>
 
 <details>
-  <summary>:vertical_traffic_light: Vertical tabs</summary>
+  <summary>Vertical tabs</summary>
+
   1. Download the [Tab Center Reborn Addon](https://addons.mozilla.org/en-GB/firefox/addon/tabcenter-reborn/)
   2. Copy the contents of [integrations/tabcenter-reborn/tabcenter-reborn.css](integrations/tabcenter-reborn/tabcenter-reborn.css) into the Addons settings
   3. Import the [integrations/tabcenter-reborn/cascade-tcr.css](integrations/tabcenter-reborn/cascade-tcr.css) into the [userChrome.css](chrome/userChrome.css)
@@ -182,7 +189,8 @@ It seems like `flexbox` (within the Firefox UI) is inheritly broken on Windows. 
 </details>
 
 <details>
-  <summary>:bullettrain_side: Side view</summary>
+  <summary>Side view</summary>
+
   [Mozilla's Side View](https://addons.mozilla.org/en-GB/firefox/addon/side-view/) is an Addon that allows you to open a second Website within the Sidebar of your Browser. Cascades integration gets rid of the header, moves the »*Close*«-Button to the bottom, and allows the sidebar to be up to 50% of your browsers width.
   1. Download the [Side View Addon](https://addons.mozilla.org/en-GB/firefox/addon/side-view/)
   2. Import the [integrations/side-view/cascade-sideview.css](integrations/side-view/cascade-sideview.css) into the [userChrome.css](chrome/userChrome.css)
