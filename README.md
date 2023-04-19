@@ -196,9 +196,22 @@ Similar to Catppuccin these are premade colour configs for [Rosé Pine](https://
 
 <br>
 
+### Tree Style Tab — Vertical Tabs
+
+Add video here
+
+#### How to set it up
+1. Download the [Tree Style Tab Addon](https://addons.mozilla.org/en-GB/firefox/addon/tree-style-tab)
+2. Copy the contents of [integrations/Tree-Style-Tab/Tree-Style-Tab-addon-css.css](integrations/Tree-Style-Tab/Tree-Style-Tab-addon-css.css) into the Addons settings
+3. Import the [integrations/Tree-Style-Tab/Tree-Style-Tab.css](integrations/Tree-Style-Tab/Tree-Style-Tab.css) into the [userChrome.css](chrome/userChrome.css)
+
+<br>
+
+<br>
+
 ### Tab Center Reborn — Vertical Tabs
 
-![Tab Center Reborn Vertical Tabs Preview](assets/cascade-tcr.webp)
+![Tab Center Reborn Vertical Tabs Preview](assets/cascade-tcr.webp) 
 
 #### How to set it up
 1. Download the [Tab Center Reborn Addon](https://addons.mozilla.org/en-GB/firefox/addon/tabcenter-reborn/)
