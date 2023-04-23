@@ -1,0 +1,102 @@
+/*---+---+---+---+---+---+---+
+ | C | O | L | O | U | R | S |
+ +---+---+---+---+---+---+---*/
+
+
+@media (prefers-color-scheme: dark) { :root {
+
+  /* These colours are (mainly) used by the
+     Container Tabs Plugin */
+  --uc-identity-colour-blue:      #5CCFE6;
+  --uc-identity-colour-turquoise: #73D0FF;
+  --uc-identity-colour-green:     #BAE67E;
+  --uc-identity-colour-yellow:    #FFD580;
+  --uc-identity-colour-orange:    #FFA759;
+  --uc-identity-colour-red:       #FF3333;
+  --uc-identity-colour-pink:      #D4BFFF;
+  --uc-identity-colour-purple:    #D3B8F9;
+
+  /*  Cascades main Colour Scheme */
+  --uc-base-colour:               #1F2430;
+  --uc-highlight-colour:          #1F2430;
+  --uc-inverted-colour:           #BAE67E;
+  --uc-muted-colour:              #707A8C;
+  --uc-accent-colour:             var(--uc-identity-colour-purple);
+
+}}
+
+
+@media (prefers-color-scheme: light) { :root {
+
+  /* These colours are (mainly) used by the
+     Container Tabs Plugin */
+  --uc-identity-colour-blue:      #39BAE6;
+  --uc-identity-colour-turquoise: #59C2FF;
+  --uc-identity-colour-green:     #C2D94C;
+  --uc-identity-colour-yellow:    #FFEE99;
+  --uc-identity-colour-orange:    #FF8F40;
+  --uc-identity-colour-red:       #FF3333;
+  --uc-identity-colour-pink:      #F07178;
+  --uc-identity-colour-purple:    #CB9FF8;
+
+  /*  Cascades main Colour Scheme */
+  --uc-base-colour:               #0A0E14;
+  --uc-highlight-colour:          #E6B450;
+  --uc-inverted-colour:           #B3B1AD;
+  --uc-muted-colour:              #4D5566;
+  --uc-accent-colour:             var(--uc-identity-colour-purple);
+
+}}
+
+/* Down here I'm just reassigning variables based on the colours set above.
+   Feel free to play around with these but there is no editing necessary below this line. c:
+   */
+
+:root {
+
+  --lwt-frame: var(--uc-base-colour) !important;
+  --lwt-accent-color: var(--lwt-frame) !important;
+  --lwt-text-color: var(--uc-muted-colour) !important;
+
+  --toolbar-field-color: var(--uc-inverted-colour) !important;
+
+  --toolbar-field-focus-color: var(--uc-inverted-colour) !important;
+  --toolbar-field-focus-background-color: var(--uc-highlight-colour) !important;
+  --toolbar-field-focus-border-color: transparent !important;
+
+  --toolbar-field-background-color: var(--lwt-frame) !important;
+  --lwt-toolbar-field-highlight: var(--uc-inverted-colour) !important;
+  --lwt-toolbar-field-highlight-text: var(--uc-highlight-colour) !important;
+  --urlbar-popup-url-color: var(--uc-accent-colour) !important;
+
+  --lwt-tab-text: var(--uc-identity-colour-blue) !important;
+
+  --lwt-selected-tab-background-color: var(--uc-highlight-colour) !important;
+
+  --toolbar-bgcolor: var(--lwt-frame) !important;
+  --toolbar-color: var(--lwt-text-color) !important;
+  --toolbarseparator-color: var(--uc-accent-colour) !important;
+  --toolbarbutton-hover-background: var(--uc-highlight-colour) !important;
+  --toolbarbutton-active-background: var(--toolbarbutton-hover-background) !important;
+
+  --lwt-sidebar-background-color: var(--lwt-frame) !important;
+  --sidebar-background-color: var(--lwt-sidebar-background-color) !important;
+
+  --urlbar-box-bgcolor: var(--uc-highlight-colour) !important;
+  --urlbar-box-text-color: var(--uc-muted-colour) !important;
+  --urlbar-box-hover-bgcolor: var(--uc-highlight-colour) !important;
+  --urlbar-box-hover-text-color: var(--uc-inverted-colour) !important;
+  --urlbar-box-focus-bgcolor: var(--uc-highlight-colour) !important;
+
+}
+
+
+
+.identity-color-blue      { --identity-tab-color: var(--uc-identity-colour-blue)      !important; --identity-icon-color: var(--uc-identity-colour-blue)      !important;  }
+.identity-color-turquoise { --identity-tab-color: var(--uc-identity-colour-turquoise) !important; --identity-icon-color: var(--uc-identity-colour-turquoise) !important; }
+.identity-color-green     { --identity-tab-color: var(--uc-identity-colour-green)     !important; --identity-icon-color: var(--uc-identity-colour-green)     !important; }
+.identity-color-yellow    { --identity-tab-color: var(--uc-identity-colour-yellow)    !important; --identity-icon-color: var(--uc-identity-colour-yellow)    !important; }
+.identity-color-orange    { --identity-tab-color: var(--uc-identity-colour-orange)    !important; --identity-icon-color: var(--uc-identity-colour-orange)    !important; }
+.identity-color-red       { --identity-tab-color: var(--uc-identity-colour-red)       !important; --identity-icon-color: var(--uc-identity-colour-red)       !important; }
+.identity-color-pink      { --identity-tab-color: var(--uc-identity-colour-pink)      !important; --identity-icon-color: var(--uc-identity-colour-pink)      !important; }
+.identity-color-purple    { --identity-tab-color: var(--uc-identity-colour-purple)    !important; --identity-icon-color: var(--uc-identity-colour-purple)    !important; }
