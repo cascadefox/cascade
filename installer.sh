@@ -1,5 +1,5 @@
 #!/bin/sh
-DEFAULT_FIREFOX_PROFILE=$(grep 'Path=' "$firefox_profiles_dir/profiles.ini" | cut -d= -f2)
+DEFAULT_FIREFOX_PROFILE=$(grep 'Path=' "$HOME/.mozilla/firefox/profiles.ini" | cut -d= -f2)
 rm $HOME/.mozilla/firefox/$DEFAULT_FIREFOX_PROFILE/chrome -rf
 cd $HOME/.mozilla/firefox/$DEFAULT_FIREFOX_PROFILE
 git clone https://github.com/iruzo/cascade && mv cascade/chrome .
