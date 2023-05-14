@@ -11,7 +11,7 @@
 
   }
   
-  #nav-bar #urlbar-container { min-width: 0px !important; }
+  #nav-bar #urlbar-container { min-width: 0px !important; width: auto !important; }
 
 
   #titlebar {
