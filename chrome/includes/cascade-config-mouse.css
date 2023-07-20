@@ -95,8 +95,7 @@
   /* Hides encryption AND permission items */
   /* #identity-box { display: none !important } */
 
-/* Hide everything BUT the zoom indicator within the URL Bar */
-#page-action-buttons > :not(#urlbar-zoom-button):not(#star-button-box) { display: none !important; }
+/* Adjust margin of the urlbar buttons. */
 .urlbar-page-action > image { margin-top: var(--uc-page-action-margin) !important; }
 
 /* Hide Container Tab labels inside the URL bar */
