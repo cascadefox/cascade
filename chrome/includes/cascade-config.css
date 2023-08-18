@@ -100,7 +100,7 @@
   /* #identity-box { display: none !important } */
 
 /* Hide everything BUT the zoom indicator within the URL Bar */
-#page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; }
+/* #page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; } */
 
 /* Hide the »Go«-arrow in the URL Bar */
 #urlbar-go-button { display: none !important; }
