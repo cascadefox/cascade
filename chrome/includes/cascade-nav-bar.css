@@ -43,5 +43,5 @@
 
 
 .urlbar-icon, #urlbar-go-button { margin: auto; }
-
 .urlbar-page-action { padding: 0 inherit !important; }
+.urlbar-page-action .urlbar-icon { margin-top: 6px !important; }
