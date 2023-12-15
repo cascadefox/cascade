@@ -148,3 +148,9 @@
 #TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[muted]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover { color: var(--toolbar-bgcolor) !important; }
+
+/* selected tab colour fix*/
+.tabbrowser-tab[selected] .tab-content {
+  background-color: var(--uc-highlight-colour) !important;
+}
+
