@@ -143,6 +143,12 @@
    *  hide: none
    */ --uc-show-all-tabs-button: none;
 
+  /*  Hide the new Tab button from the Tab Bar
+   *  possible values:
+   *  show: -moz-box
+   *  hide: none
+   */ --uc-show-new-tab-button: -moz-box;
+
 
   /*  Left and Right "dip" of the container indicator
    *  0px equals tab width

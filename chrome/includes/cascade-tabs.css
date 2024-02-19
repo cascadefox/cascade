@@ -8,6 +8,10 @@
 #alltabs-button { display: var(--uc-show-all-tabs-button) !important; }
 
 
+/* Hides the new-tab button*/
+#tabs-newtab-button { display: var(--uc-show-new-tab-button) !important; }
+
+
 /* remove tab shadow */
 .tabbrowser-tab
   >.tab-stack
