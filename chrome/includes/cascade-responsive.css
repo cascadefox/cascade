@@ -1,4 +1,4 @@
-@media (min-width: 1000px) {
+@media (min-width: var(--urlbar-breakpoint)) {
 
 
   #navigator-toolbox { display: flex; flex-wrap: wrap; flex-direction: row; }

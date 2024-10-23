@@ -42,19 +42,23 @@ While appreciated it's ofc by no means necessary. ♡<br><br>
 
 <details><summary><h2>Table of Contents</h2></summary>
 
-- [Installation](#how-to-install-cascade)
-- [Customisation](#customise-cascade-to-your-liking)
-  - [Colours](#colours)
-  - [Mouse Support](#mouse-support)
-  - [Reorder the UI](#sort-the-ui-like-you-want-it)
-  - [URL Bar Customisation](#url-bar-customisation)
-  - [Custom Breakpoint](#oneline-breakpoint)
-- [Integrations](#integrations)
-  - [Catppuccin](#catppuccin)
-  - [Rosé Pine](#rosé-pine)
-  - [Vertical Tabs](#tab-center-reborn--vertical-tabs)
-  - [Side View](#side-view)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Cascade](#cascade)
+  - [How to install Cascade](#how-to-install-cascade)
+  - [Customise Cascade to your liking](#customise-cascade-to-your-liking)
+    - [Colours](#colours)
+    - [Mouse Support](#mouse-support)
+    - [Sort the UI like you want it](#sort-the-ui-like-you-want-it)
+    - [URL Bar Customisation](#url-bar-customisation)
+    - [Oneline Breakpoint](#oneline-breakpoint)
+  - [Integrations](#integrations)
+    - [Catppuccin](#catppuccin)
+    - [Rosé Pine](#rosé-pine)
+      - [How to set it up](#how-to-set-it-up)
+    - [Tab Center Reborn — Vertical Tabs](#tab-center-reborn--vertical-tabs)
+      - [How to set it up](#how-to-set-it-up-1)
+    - [Side View](#side-view)
+      - [How to set it up](#how-to-set-it-up-2)
+  - [Keyboard Shortcuts](#keyboard-shortcuts)
 
 </details><br>
 
@@ -157,14 +161,12 @@ If you set the `min-width` to `0vw` and the `max-width` to `100vw` you can also 
 
 ### Oneline Breakpoint
 
-If you'd like to have Cascade transition into it's Oneline layout on either smaller or larger sizes you can simply do so by changing the breakpoint value in the [responsive include](chrome/includes/cascade-responsive.css) file. If you don't want Cascade to break to the Oneline layout at all remove it from the [userChrome.css](chrome/userChrome.css) file
+If you'd like to have Cascade transition into it's Oneline layout on either smaller or larger sizes you can simply do so by changing the breakpoint value in the [config](hrome/includes/cascade-config.css) file. If you don't want Cascade to break to the Oneline layout at all remove it from the [userChrome.css](chrome/userChrome.css) file
 
 ```css
-@media (min-width: 1000px) {
-
-  […]
-
-}
+/*  The point at which the URL Bar switches to the
+ *  Oneline layout
+ */ --urlbar-breakpoint: 1000px;
 ```
 
 <br><br><br>
