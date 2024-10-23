@@ -166,7 +166,7 @@ If you'd like to have Cascade transition into it's Oneline layout on either smal
 ```css
 /*  The point at which the URL Bar switches to the
  *  Oneline layout
- */ --urlbar-breakpoint: 1000px;
+ */ --uc-urlbar-breakpoint: 1000px;
 ```
 
 <br><br><br>

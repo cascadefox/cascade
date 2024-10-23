@@ -80,7 +80,7 @@
 
   /*  The point at which the URL Bar switches to the
    *  Oneline layout
-   */ --urlbar-breakpoint: 1000px;
+   */ --uc-urlbar-breakpoint: 1000px;
 
   /*  Firefox can be a little wonky with the vertical
    *  URL Bar placement. Change this variable to adapt
