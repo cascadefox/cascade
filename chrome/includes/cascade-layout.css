@@ -8,7 +8,13 @@
 
 
 
-
+#toolbar-menubar {
+  &[autohide="true"] {
+    &[inactive]:not([customizing]) {
+      width: 0px;
+    }
+  }
+}
 
 #main-window,
 #toolbar-menubar,
