@@ -7,7 +7,7 @@
 
   /*  Global Border Radius
    *  applied to ALL UI elements
-   */ --uc-border-radius: 0px;
+   */ --uc-border-radius: 8px;
 
 
   /*  The distance the Statuspanel floats
@@ -43,7 +43,7 @@
  *  4 – toolbar on bottom
  */
 :root {
-  --uc-toolbar-position: 0;
+  --uc-toolbar-position: 4;
 }
 
 /*  Darken the Personal Toolbar by X amount
