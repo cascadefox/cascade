@@ -92,6 +92,8 @@
 /* Encryption and Permissions icons */
   /* Only hides permission items */
   #identity-permission-box { display: none !important; }
+  /* Hides extension page box */
+  #identity-box.extensionPage { display: none !important; }
   /* Hides encryption AND permission items */
   /* #identity-box { display: none !important } */
 
