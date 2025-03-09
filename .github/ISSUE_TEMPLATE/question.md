@@ -1,8 +1,6 @@
 ---
 name: Support
 about: Ask for support; General Questions
-title: ''
+title: ""
 labels: support
-
 ---
-

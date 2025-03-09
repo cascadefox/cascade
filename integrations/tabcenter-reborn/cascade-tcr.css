@@ -1,37 +1,57 @@
-#TabsToolbar { display: none !important; }
-#nav-bar { width: 100vw !important; }
+#TabsToolbar {
+  display: none !important;
+}
+#nav-bar {
+  width: 100vw !important;
+}
 
-
-
-#browser { position: relative; }
-#sidebar-box[sidebarcommand*="tabcenter"] #sidebar-header { display: none; }
+#browser {
+  position: relative;
+}
+#sidebar-box[sidebarcommand*="tabcenter"] #sidebar-header {
+  display: none;
+}
 
 #sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) {
-
   display: block;
 
   position: absolute;
-  top: 0; bottom: 0;
+  top: 0;
+  bottom: 0;
   z-index: 3;
 
-  min-width: 50px !important; max-width: 50px !important;
+  min-width: 50px !important;
+  max-width: 50px !important;
 
   border-right: none;
 
   transition: all 0.2s ease;
 
   overflow: hidden;
-
 }
 
 [sidebarcommand*="tabcenter"] #sidebar,
-#sidebar-box[sidebarcommand*="tabcenter"]:hover { min-width: 10vw !important; width: 30vw !important; max-width: 250px !important; }
+#sidebar-box[sidebarcommand*="tabcenter"]:hover {
+  min-width: 10vw !important;
+  width: 30vw !important;
+  max-width: 250px !important;
+}
 
-[sidebarcommand*="tabcenter"] #sidebar { height: 100%; max-height: 100%; }
+[sidebarcommand*="tabcenter"] #sidebar {
+  height: 100%;
+  max-height: 100%;
+}
 
-#sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) ~ #tabbrowser-tabbox { margin-left: 50px !important; }
-#main-window[inFullscreen][inDOMFullscreen] #tabbrowser-tabbox { margin-left: 0 !important; }
+#sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) ~ #tabbrowser-tabbox {
+  margin-left: 50px !important;
+}
+#main-window[inFullscreen][inDOMFullscreen] #tabbrowser-tabbox {
+  margin-left: 0 !important;
+}
 /* Removes gap between active tab highlight and edge of bar */
-#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] #sidebar-header, #sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] ~ #sidebar-splitter {
-    display: none;
+#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"]
+  #sidebar-header,
+#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"]
+  ~ #sidebar-splitter {
+  display: none;
 }

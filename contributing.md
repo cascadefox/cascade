@@ -19,9 +19,9 @@ Besides the creation and maintenance of ports we appreciate all sorts of code an
 The following is a set of guidelines for contributing to this project. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 - PRs should go to the `dev` branch. Reasons:
-	- If there is already stuff under development, then it's likely that a conflict may occur.
-	- Documentation tends not to be updated by PRs.
-	- Testing.
+  - If there is already stuff under development, then it's likely that a conflict may occur.
+  - Documentation tends not to be updated by PRs.
+  - Testing.
 - Use the `.editorconfig` file (located at the root of this project) on your editor so as to "maintain consistent coding styles". For instructions on how to use this file refer to [EditorConfig's website](https://editorconfig.org/).
 
 > When contributing to this project, you must agree that you have authored 100% of the content, (or) that you have the necessary rights to the content and that the content you contribute may be provided under the [projects MIT license](https://github.com/andreasgrafen/cascade/blob/main/LICENSE).
