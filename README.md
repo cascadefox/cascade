@@ -1,6 +1,7 @@
 <div align="center">
 
 # Cascade
+
 **A minimalistic and keyboard centered userChrome**
 
 ![Cascade Preview](assets/preview.webp)

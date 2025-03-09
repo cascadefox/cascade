@@ -2,63 +2,55 @@
  | C | O | L | O | U | R | S |
  +---+---+---+---+---+---+---*/
 
-
-@media (prefers-color-scheme: dark) { :root {
-
-  /* These colours are (mainly) used by the
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* These colours are (mainly) used by the
      Container Tabs Plugin */
-  --uc-identity-colour-blue:      #8CAAEE;
-  --uc-identity-colour-turquoise: #81C8BE;
-  --uc-identity-colour-green:     #A6D189;
-  --uc-identity-colour-yellow:    #E5C890;
-  --uc-identity-colour-orange:    #EF9F76;
-  --uc-identity-colour-red:       #E78284;
-  --uc-identity-colour-pink:      #F4B8E4;
-  --uc-identity-colour-purple:    #CA9EE6;
+    --uc-identity-colour-blue: #8caaee;
+    --uc-identity-colour-turquoise: #81c8be;
+    --uc-identity-colour-green: #a6d189;
+    --uc-identity-colour-yellow: #e5c890;
+    --uc-identity-colour-orange: #ef9f76;
+    --uc-identity-colour-red: #e78284;
+    --uc-identity-colour-pink: #f4b8e4;
+    --uc-identity-colour-purple: #ca9ee6;
 
-  /*  Cascades main Colour Scheme */
-  --uc-base-colour:               #303446;
-  --uc-highlight-colour:          #292C3C;
-  --uc-inverted-colour:           #C6D0F5;
-  --uc-muted-colour:              #737994;
-  --uc-accent-colour:             var(--uc-identity-colour-purple);
+    /*  Cascades main Colour Scheme */
+    --uc-base-colour: #303446;
+    --uc-highlight-colour: #292c3c;
+    --uc-inverted-colour: #c6d0f5;
+    --uc-muted-colour: #737994;
+    --uc-accent-colour: var(--uc-identity-colour-purple);
+  }
+}
 
-}}
-
-
-@media (prefers-color-scheme: light) { :root {
-
-  /* These colours are (mainly) used by the
+@media (prefers-color-scheme: light) {
+  :root {
+    /* These colours are (mainly) used by the
      Container Tabs Plugin */
-  --uc-identity-colour-blue:      #1E66F5;
-  --uc-identity-colour-turquoise: #179299;
-  --uc-identity-colour-green:     #40A02B;
-  --uc-identity-colour-yellow:    #DF8E1D;
-  --uc-identity-colour-orange:    #FE640B;
-  --uc-identity-colour-red:       #D20F39;
-  --uc-identity-colour-pink:      #D20F39;
-  --uc-identity-colour-purple:    #8839EF;
+    --uc-identity-colour-blue: #1e66f5;
+    --uc-identity-colour-turquoise: #179299;
+    --uc-identity-colour-green: #40a02b;
+    --uc-identity-colour-yellow: #df8e1d;
+    --uc-identity-colour-orange: #fe640b;
+    --uc-identity-colour-red: #d20f39;
+    --uc-identity-colour-pink: #d20f39;
+    --uc-identity-colour-purple: #8839ef;
 
-  /*  Cascades main Colour Scheme */
-  --uc-base-colour:               #EFF1F5;
-  --uc-highlight-colour:          #DCE0E8;
-  --uc-inverted-colour:           #4C4F69;
-  --uc-muted-colour:              #9CA0B0;
-  --uc-accent-colour:             var(--uc-identity-colour-purple);
-
-}}
-
-
-
-
-
+    /*  Cascades main Colour Scheme */
+    --uc-base-colour: #eff1f5;
+    --uc-highlight-colour: #dce0e8;
+    --uc-inverted-colour: #4c4f69;
+    --uc-muted-colour: #9ca0b0;
+    --uc-accent-colour: var(--uc-identity-colour-purple);
+  }
+}
 
 /* Down here I'm just reassigning variables based on the colours set above.
    Feel free to play around with these but there is no editing necessary below this line. c:
    */
 
 :root {
-
   --lwt-frame: var(--uc-base-colour) !important;
   --lwt-accent-color: var(--lwt-frame) !important;
   --lwt-text-color: var(--uc-inverted-colour) !important;
@@ -82,7 +74,9 @@
   --toolbar-color: var(--lwt-text-color) !important;
   --toolbarseparator-color: var(--uc-accent-colour) !important;
   --toolbarbutton-hover-background: var(--uc-highlight-colour) !important;
-  --toolbarbutton-active-background: var(--toolbarbutton-hover-background) !important;
+  --toolbarbutton-active-background: var(
+    --toolbarbutton-hover-background
+  ) !important;
 
   --lwt-sidebar-background-color: var(--lwt-frame) !important;
   --sidebar-background-color: var(--lwt-sidebar-background-color) !important;
@@ -92,16 +86,37 @@
   --urlbar-box-hover-bgcolor: var(--uc-highlight-colour) !important;
   --urlbar-box-hover-text-color: var(--uc-inverted-colour) !important;
   --urlbar-box-focus-bgcolor: var(--uc-highlight-colour) !important;
-
 }
 
-
-
-.identity-color-blue      { --identity-tab-color: var(--uc-identity-colour-blue)      !important; --identity-icon-color: var(--uc-identity-colour-blue)      !important;  }
-.identity-color-turquoise { --identity-tab-color: var(--uc-identity-colour-turquoise) !important; --identity-icon-color: var(--uc-identity-colour-turquoise) !important; }
-.identity-color-green     { --identity-tab-color: var(--uc-identity-colour-green)     !important; --identity-icon-color: var(--uc-identity-colour-green)     !important; }
-.identity-color-yellow    { --identity-tab-color: var(--uc-identity-colour-yellow)    !important; --identity-icon-color: var(--uc-identity-colour-yellow)    !important; }
-.identity-color-orange    { --identity-tab-color: var(--uc-identity-colour-orange)    !important; --identity-icon-color: var(--uc-identity-colour-orange)    !important; }
-.identity-color-red       { --identity-tab-color: var(--uc-identity-colour-red)       !important; --identity-icon-color: var(--uc-identity-colour-red)       !important; }
-.identity-color-pink      { --identity-tab-color: var(--uc-identity-colour-pink)      !important; --identity-icon-color: var(--uc-identity-colour-pink)      !important; }
-.identity-color-purple    { --identity-tab-color: var(--uc-identity-colour-purple)    !important; --identity-icon-color: var(--uc-identity-colour-purple)    !important; }
+.identity-color-blue {
+  --identity-tab-color: var(--uc-identity-colour-blue) !important;
+  --identity-icon-color: var(--uc-identity-colour-blue) !important;
+}
+.identity-color-turquoise {
+  --identity-tab-color: var(--uc-identity-colour-turquoise) !important;
+  --identity-icon-color: var(--uc-identity-colour-turquoise) !important;
+}
+.identity-color-green {
+  --identity-tab-color: var(--uc-identity-colour-green) !important;
+  --identity-icon-color: var(--uc-identity-colour-green) !important;
+}
+.identity-color-yellow {
+  --identity-tab-color: var(--uc-identity-colour-yellow) !important;
+  --identity-icon-color: var(--uc-identity-colour-yellow) !important;
+}
+.identity-color-orange {
+  --identity-tab-color: var(--uc-identity-colour-orange) !important;
+  --identity-icon-color: var(--uc-identity-colour-orange) !important;
+}
+.identity-color-red {
+  --identity-tab-color: var(--uc-identity-colour-red) !important;
+  --identity-icon-color: var(--uc-identity-colour-red) !important;
+}
+.identity-color-pink {
+  --identity-tab-color: var(--uc-identity-colour-pink) !important;
+  --identity-icon-color: var(--uc-identity-colour-pink) !important;
+}
+.identity-color-purple {
+  --identity-tab-color: var(--uc-identity-colour-purple) !important;
+  --identity-icon-color: var(--uc-identity-colour-purple) !important;
+}
