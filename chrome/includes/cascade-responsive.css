@@ -14,7 +14,7 @@
   #nav-bar #urlbar-container { min-width: 0px !important; width: auto !important; }
 
 
-  #titlebar {
+  #TabsToolbar {
 
     order: 2;
     width: calc(100vw - var(--uc-urlbar-min-width) - 1px);
