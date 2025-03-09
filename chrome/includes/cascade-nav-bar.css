@@ -1,4 +1,4 @@
-#navigator-toolbox:not(:-moz-lwtheme) { background: var(--toolbar-field-background-color) !important; ) }
+#navigator-toolbox:not(:-moz-lwtheme) { background: var(--toolbar-field-background-color) !important; }
 
 
 
@@ -15,8 +15,6 @@
 
 #urlbar,
 #urlbar * {
-
-  padding-block-start: var(--uc-urlbar-top-spacing) !important;
 
   outline: none !important;
   box-shadow: none !important;
@@ -43,5 +41,4 @@
 
 
 .urlbar-icon, #urlbar-go-button { margin: auto; }
-
 .urlbar-page-action { padding: 0 inherit !important; }

@@ -8,7 +8,13 @@
 
 
 
-
+#toolbar-menubar {
+  &[autohide="true"] {
+    &[inactive]:not([customizing]) {
+      width: 0px;
+    }
+  }
+}
 
 #main-window,
 #toolbar-menubar,
@@ -39,16 +45,22 @@
 }
 
 
-
+#TabsToolbar {
+  order: 2;
+}
+#nav-bar {
+  order: 3;
+}
 
 
 #PersonalToolbar {
 
   padding: 6px !important;
-  box-shadow: inset 0 0 50vh rgba(0, 0, 0, var(--uc-darken-toolbar)) !important;;
+  box-shadow: inset 0 0 50vh rgba(0, 0, 0, var(--uc-darken-toolbar)) !important;
+  order: var(--uc-toolbar-position);
+  width: 100%;
 
 }
-
 
 
 

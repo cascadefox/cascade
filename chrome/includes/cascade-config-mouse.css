@@ -7,7 +7,7 @@
 
   /*  Global Border Radius
    *  applied to ALL UI elements
-   */ --uc-border-radius: 0px;
+   */ --uc-border-radius: 8px;
 
 
   /*  The distance the Statuspanel floats
@@ -44,7 +44,7 @@
  *  4 – toolbar on bottom
  */
 :root {
-  --uc-toolbar-position: 0;
+  --uc-toolbar-position: 4;
 }
 
 /*  Darken the Personal Toolbar by X amount
@@ -92,11 +92,12 @@
 /* Encryption and Permissions icons */
   /* Only hides permission items */
   #identity-permission-box { display: none !important; }
+  /* Hides extension page box */
+  #identity-box.extensionPage { display: none !important; }
   /* Hides encryption AND permission items */
   /* #identity-box { display: none !important } */
 
-/* Hide everything BUT the zoom indicator within the URL Bar */
-#page-action-buttons > :not(#urlbar-zoom-button):not(#star-button-box) { display: none !important; }
+/* Adjust margin of the urlbar buttons. */
 .urlbar-page-action > image { margin-top: var(--uc-page-action-margin) !important; }
 
 /* Hide Container Tab labels inside the URL bar */

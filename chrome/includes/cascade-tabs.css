@@ -1,7 +1,7 @@
 /* remove gap after pinned tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
   > #tabbrowser-arrowscrollbox
-  > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
+  > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) { margin-inline-start: 0 !important; }
 
 
 /* Hides the list-all-tabs button*/
@@ -148,3 +148,8 @@
 #TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[muted]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover { color: var(--toolbar-bgcolor) !important; }
+
+/* selected tab colour fix*/
+.tabbrowser-tab[selected] .tab-content {
+  background-color: var(--uc-highlight-colour) !important;
+}
