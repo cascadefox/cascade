@@ -16,16 +16,7 @@
 
   #TabsToolbar {
 
-    order: 2;
     width: calc(100vw - var(--uc-urlbar-min-width) - 1px);
-
-  }
-
-
-  #PersonalToolbar {
-
-    order: var(--uc-toolbar-position);
-    width: 100%;
 
   }
 
