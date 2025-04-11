@@ -42,7 +42,8 @@
   max-height: 100%;
 }
 
-#sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) ~ #tabbrowser-tabbox {
+#browser:has(#sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]))
+  #tabbrowser-tabbox {
   margin-left: 50px !important;
 }
 #main-window[inFullscreen][inDOMFullscreen] #tabbrowser-tabbox {
