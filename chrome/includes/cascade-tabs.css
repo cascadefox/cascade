@@ -44,7 +44,7 @@
   > .tab-stack
   > .tab-background
   > .tab-context-line {
-  margin: -1px var(--container-tabs-indicator-margin) 0
+  margin: 2px var(--container-tabs-indicator-margin) 0
     var(--container-tabs-indicator-margin) !important;
   height: 1px !important;
 
@@ -149,6 +149,19 @@
 }
 
 /* selected tab colour fix */
-.tabbrowser-tab[selected] .tab-content {
+.tabbrowser-tab[selected] .tab-background {
   background-color: var(--uc-highlight-colour) !important;
+  outline: none !important;
+}
+.tab-background {
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
+/* disable tab group label changing colour when collapsed */
+.tab-group-label-container > .tab-group-label {
+  outline: none !important;
+  color: light-dark(var(--tab-group-color-pale), var(--tab-group-label-text-dark)) !important;
+  background-color: light-dark(var(--tab-group-color), var(--tab-group-color-invert)) !important;
+  border-radius: var(--uc-border-radius) !important;
 }
