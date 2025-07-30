@@ -5,7 +5,7 @@
   margin-inline-start: 0 !important;
 }
 
-/* Hides the list-all-tabs button*/
+/* hides the list-all-tabs button*/
 #alltabs-button {
   display: var(--uc-show-all-tabs-button) !important;
 }
@@ -32,10 +32,10 @@
 }
 
 /* adaptive tab width */
-.tabbrowser-tab[selected][fadein]:not([pinned]) {
+.tabbrowser-tab[selected][fadein]:not([pinned]):not(tab-group[collapsed] .tabbrowser-tab) {
   max-width: var(--uc-active-tab-width) !important;
 }
-.tabbrowser-tab[fadein]:not([selected]):not([pinned]) {
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]):not(tab-group[collapsed] .tabbrowser-tab) {
   max-width: var(--uc-inactive-tab-width) !important;
 }
 
@@ -56,7 +56,7 @@
   opacity: 1 !important;
 }
 
-/* Makes the speaker icon to always appear if the tab is playing (not only on hover) */
+/* makes the speaker icon to always appear if the tab is playing (not only on hover) */
 .tab-icon-overlay:not([crashed]),
 .tab-icon-overlay[pinned][crashed][selected] {
   top: 5px !important;
@@ -148,7 +148,7 @@
   color: var(--toolbar-bgcolor) !important;
 }
 
-/* selected tab colour fix*/
+/* selected tab colour fix */
 .tabbrowser-tab[selected] .tab-content {
   background-color: var(--uc-highlight-colour) !important;
 }
