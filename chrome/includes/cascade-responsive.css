@@ -8,6 +8,10 @@
   #nav-bar {
     order: var(--uc-urlbar-position);
     width: var(--uc-urlbar-min-width);
+    
+    &.browser-titlebar {
+      width: 100%;
+    }
   }
 
   #nav-bar #urlbar-container {
