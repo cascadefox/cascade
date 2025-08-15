@@ -8,7 +8,6 @@
   #nav-bar {
     order: var(--uc-urlbar-position);
     width: var(--uc-urlbar-min-width);
-    
     &.browser-titlebar {
       width: 100%;
     }
@@ -25,6 +24,9 @@
 
   #navigator-toolbox:focus-within #nav-bar {
     width: var(--uc-urlbar-max-width);
+    &.browser-titlebar {
+      width: 100%;
+    }
   }
   #navigator-toolbox:focus-within #titlebar {
     width: calc(100vw - var(--uc-urlbar-max-width) - 1px);
