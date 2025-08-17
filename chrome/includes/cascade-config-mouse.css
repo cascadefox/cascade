@@ -16,7 +16,7 @@
 
   /*  Top margin for the Page Action Buttons
    *  inside the URL Bar. This might need
-   *  customisation depending on yout setup!
+   *  customisation depending on your setup!
    */
   --uc-page-action-margin: 7px;
 }
@@ -146,7 +146,7 @@
 
   /*  Left and Right "dip" of the container indicator
    *  0px equals tab width
-   *  higer values make the indicator smaller
+   *  higher values make the indicator smaller
    */
   --container-tabs-indicator-margin: 10px;
 
