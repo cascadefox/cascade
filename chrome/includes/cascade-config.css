@@ -154,7 +154,7 @@
 
   /*  Left and Right "dip" of the container indicator
    *  0px equals tab width
-   *  higer values make the indicator smaller
+   *  higher values make the indicator smaller
    */
   --container-tabs-indicator-margin: 10px;
 
