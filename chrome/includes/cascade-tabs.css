@@ -170,3 +170,8 @@
 #vertical-tabs-newtab-button {
   display: none !important;
 }
+
+/* hide vertical tabs action buttons */
+.tools-and-extensions.actions-list {
+  display: none !important;
+}
