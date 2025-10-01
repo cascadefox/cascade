@@ -172,6 +172,6 @@
 }
 
 /* hide vertical tabs action buttons */
-.tools-and-extensions.actions-list {
+.tools-and-extensions.actions-list, #sidebar-tools-and-extensions-splitter, #tabbrowser-tabs[orient="vertical"]::after {
   display: none !important;
 }
