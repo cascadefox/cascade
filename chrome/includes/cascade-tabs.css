@@ -169,6 +169,6 @@
 }
 
 /* hide vertical tabs new tab button */
-#tabs-newtab-button {
+#vertical-tabs-newtab-button {
   display: none !important;
 }
