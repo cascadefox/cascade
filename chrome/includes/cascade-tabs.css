@@ -172,6 +172,10 @@
 }
 
 /* hide vertical tabs action buttons */
+/*
+this removes the ability to toggle the "expand sidebar on hover" option that is not available in preferences
+
 .tools-and-extensions.actions-list, #sidebar-tools-and-extensions-splitter, #tabbrowser-tabs[orient="vertical"]::after {
   display: none !important;
 }
+*/
