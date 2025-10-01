@@ -158,10 +158,11 @@
   border-radius: 0px !important;
 }
 
-/* disable tab group label changing colour when collapsed */
 .tab-group-label-container > .tab-group-label {
   outline: none !important;
+  border-radius: var(--uc-border-radius) !important;
+  width: 100%;
+  /* disable tab group label changing colour when collapsed */
   color: light-dark(var(--tab-group-color-pale), var(--tab-group-label-text-dark)) !important;
   background-color: light-dark(var(--tab-group-color), var(--tab-group-color-invert)) !important;
-  border-radius: var(--uc-border-radius) !important;
 }
