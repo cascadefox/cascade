@@ -20,17 +20,6 @@
         & #sidebar {
             border-radius: 0px !important;
             outline: none !important;
-
-            /*not sure if needed*/
-            height: 100%;
-            max-height: 100%;
-
-            /* expand on hover */
-            /*&:hover {
-                min-width: 10vw !important;
-                width: 30vw !important;
-                max-width: 250px !important;
-            }*/
         }
 
         #sidebar-box[sidebarcommand*="tabcenter"] {
