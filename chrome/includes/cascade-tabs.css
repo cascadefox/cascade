@@ -40,15 +40,13 @@
 }
 
 /* container tabs indicator */
-.tabbrowser-tab[usercontextid]
-  > .tab-stack
-  > .tab-background
-  > .tab-context-line {
-  margin: 2px var(--container-tabs-indicator-margin) 0
-    var(--container-tabs-indicator-margin) !important;
-  height: 1px !important;
-
-  box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
+#TabsToolbar .tab-context-line {
+    margin: 2px var(--container-tabs-indicator-margin) 0
+        var(--container-tabs-indicator-margin) !important;
+    height: 1px !important;
+}
+.tab-context-line {
+    box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
 }
 
 /* show favicon when media is playing but tab is hovered */
