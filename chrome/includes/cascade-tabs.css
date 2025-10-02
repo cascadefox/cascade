@@ -166,8 +166,8 @@
   background-color: light-dark(var(--tab-group-color), var(--tab-group-color-invert)) !important;
 }
 
-/* hide vertical tabs new tab button */
-#vertical-tabs-newtab-button {
+/* hide vertical tabs new tab button, there is also one for overflow */
+#vertical-tabs-newtab-button, #tabs-newtab-button {
   display: none !important;
 }
 
