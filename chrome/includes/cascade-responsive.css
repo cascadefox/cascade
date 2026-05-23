@@ -8,6 +8,8 @@
   #nav-bar {
     order: var(--uc-urlbar-position);
     width: var(--uc-urlbar-min-width);
+    overflow: hidden;
+    container-type: inline-size;
     &.browser-titlebar {
       width: 100%;
     }
@@ -30,5 +32,19 @@
   }
   #navigator-toolbox:focus-within #titlebar {
     width: calc(100vw - var(--uc-urlbar-max-width) - 1px);
+  }
+
+}
+
+@container (max-width: 1px) {
+  #nav-bar {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  #unified-extensions-button,
+  #sidebar-button {
+    display: none !important;
   }
 }
